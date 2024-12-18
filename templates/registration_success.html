@@ -3,17 +3,17 @@
 
 {% block body %}
 
-<p>Verification success. Redirecting you to <a href="https://app.staging.pangea.chat">app.staging.pangea.chat</a>...</p>
+<p>Verification success. Redirecting you to <a href="https://app.pangea.chat">app.pangea.chat</a>...</p>
 
 <!-- Button to manually go to app.pangea.chat -->
 <div id="manualRedirect" style="display: none; margin-top: 20px;">
-    <button onclick="window.location.href='https://app.staging.pangea.chat'">Go to app.staging.pangea.chat</button>
+    <button onclick="window.location.href='https://app.pangea.chat'">Go to app.pangea.chat</button>
 </div>
 
 <script>
 // Automatically redirect after 2 seconds
 setTimeout(function() {
-    window.location.href = 'https://app.staging.pangea.chat';
+    window.location.href = 'https://app.pangea.chat';
 }, 2000);
 
 // Show manual redirect button after 4 seconds

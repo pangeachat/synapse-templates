@@ -1,7 +1,7 @@
 Verification Success
 
-You will be redirected to https://app.staging.pangea.chat in a few seconds.
+You will be redirected to https://app.pangea.chat in a few seconds.
 
 If the redirection does not happen automatically, please click the link below to proceed:
 
-https://app.staging.pangea.chat
+https://app.pangea.chat

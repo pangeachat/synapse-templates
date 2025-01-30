@@ -3,23 +3,8 @@
 
 {% block body %}
 
-<p>Verification success. Redirecting you to <a href="https://app.pangea.chat">app.pangea.chat</a>...</p>
+<p>Verification success</p>
 
-<!-- Button to manually go to app.pangea.chat -->
-<div id="manualRedirect" style="display: none; margin-top: 20px;">
-    <button onclick="window.location.href='https://app.pangea.chat'">Go to app.pangea.chat</button>
-</div>
-
-<script>
-// Automatically redirect after 2 seconds
-setTimeout(function() {
-    window.location.href = 'https://app.pangea.chat';
-}, 2000);
-
-// Show manual redirect button after 4 seconds
-setTimeout(function() {
-    document.getElementById('manualRedirect').style.display = 'block';
-}, 4000);
-</script>
+<p>please open the app to complete the registration process</p>
 
 {% endblock %}

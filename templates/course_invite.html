@@ -1,0 +1,64 @@
+{% extends "_base.html" %} {% block title %}You're Invited to {{ course_title
+}}{% endblock %} {% block body %}
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding: 24px 0">
+      {% if inviter_names %}
+      <p>
+        <strong>{{ inviter_names | join(', ') }}</strong> invited you to join
+        <strong>{{ course_title }}</strong> on Pangea Chat.
+      </p>
+      {% else %}
+      <p>
+        You've been invited to join
+        <strong>{{ course_title }}</strong> on Pangea Chat.
+      </p>
+      {% endif %} {% if course_description %}
+      <p style="color: #555">{{ course_description }}</p>
+      {% endif %} {% if message %}
+      <table
+        width="100%"
+        cellpadding="12"
+        cellspacing="0"
+        border="0"
+        style="background-color: #f5f5f5; border-radius: 8px; margin: 16px 0"
+      >
+        <tr>
+          <td style="font-style: italic; color: #333">"{{ message }}"</td>
+        </tr>
+      </table>
+      {% endif %}
+
+      <table cellpadding="0" cellspacing="0" border="0" style="margin: 24px 0">
+        <tr>
+          <td
+            style="
+              background-color: #4a67ff;
+              border-radius: 8px;
+              padding: 12px 32px;
+            "
+          >
+            <a
+              href="{{ join_url }}"
+              style="
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+              "
+              >Join Your Course</a
+            >
+          </td>
+        </tr>
+      </table>
+
+      <p style="font-size: 14px; color: #666">
+        If you don't have a Pangea Chat account yet, you'll be guided through a
+        quick sign-up first.
+      </p>
+
+      <p>— The Pangea Chat Team</p>
+    </td>
+  </tr>
+</table>
+{% endblock %}

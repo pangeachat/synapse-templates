@@ -1,0 +1,12 @@
+{% if inviter_names %}{{ inviter_names | join(', ') }} invited you to join "{{ course_title }}" on Pangea Chat.{% else %}You've been invited to join "{{ course_title }}" on Pangea Chat.{% endif %}
+
+{% if course_description %}{{ course_description }}
+
+{% endif %}{% if message %}"{{ message }}"
+
+{% endif %}Join your course:
+{{ join_url }}
+
+If you don't have a Pangea Chat account yet, you'll be guided through a quick sign-up first.
+
+— The Pangea Chat Team

@@ -1,1 +1,1 @@
-.github/copilot-instructions.md
+@.github/instructions/course-invite-by-email.instructions.md

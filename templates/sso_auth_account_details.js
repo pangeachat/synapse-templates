@@ -4,6 +4,8 @@
   availability check is pending remembers the submit intent and submits the
   form automatically once the check passes. Upstream silently swallows the
   first click and requires a second one.
+  - User-facing strings come from the catalog via PangeaL10n.t (see l10n.js and
+  .github/instructions/localization.instructions.md), not from string literals.
 */
 const usernameField = document.getElementById("field-username");
 const usernameOutput = document.getElementById("field-username-output");
@@ -49,13 +51,12 @@ function checkUsernameAvailable(username) {
         } else if(json.available) {
             return {available: true};
         } else {
-            return {message: username + " is not available, please choose another."};
+            return {message: PangeaL10n.t("accountDetails.errorNotAvailable", {username: username})};
         }
     });
 }
 
 const allowedUsernameCharacters = new RegExp("^[a-z0-9\\.\\_\\-\\/\\=]+$");
-const allowedCharactersString = "lowercase letters, digits, ., _, -, /, =";
 
 function reportError(error) {
     submitPending = false;
@@ -73,15 +74,17 @@ function validateUsername(username) {
     usernameField.parentElement.classList.remove("invalid");
     usernameOutput.classList.remove("error");
     if (!username) {
-        return reportError("This is required. Please provide a username");
+        return reportError(PangeaL10n.t("accountDetails.errorRequired"));
     }
     if (username.length > 255) {
-        return reportError("Too long, please choose something shorter");
+        return reportError(PangeaL10n.t("accountDetails.errorTooLong"));
     }
     if (!allowedUsernameCharacters.test(username)) {
-        return reportError("Invalid username, please only use " + allowedCharactersString);
+        return reportError(PangeaL10n.t("accountDetails.errorInvalidCharacters", {
+            allowed_characters: PangeaL10n.t("accountDetails.allowedCharacters"),
+        }));
     }
-    usernameOutput.innerText = "Checking if username is available …";
+    usernameOutput.innerText = PangeaL10n.t("accountDetails.checking");
     throttledCheckUsernameAvailable(username);
 }
 

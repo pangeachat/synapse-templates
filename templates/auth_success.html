@@ -1,8 +1,14 @@
+{# Copy comes from l10n/ and is rendered in the browser, not from this file;
+   see .github/instructions/localization.instructions.md. #}
 {% extends "_base.html" %}
-{% block title %}Success!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block header %}
 <link rel="stylesheet" href="/_matrix/static/client/register/style.css">
+<script type="text/javascript">
+    {% include "l10n_auth_success.js" without context %}
+    window.PANGEA_L10N_TITLE = "authSuccess.title";
+</script>
 <script>
 if (window.onAuthDone) {
     window.onAuthDone();
@@ -14,8 +20,8 @@ if (window.onAuthDone) {
 
 {% block body %}
 <div>
-    <p>Thank you</p>
-    <p>You may now close this window and return to the application</p>
+    <p data-l10n="authSuccess.thankYou"></p>
+    <p data-l10n="authSuccess.mayClose"></p>
 </div>
 
 {% endblock %}

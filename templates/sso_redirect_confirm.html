@@ -1,7 +1,14 @@
+{# Copy comes from l10n/ and is rendered in the browser, not from this file;
+   see .github/instructions/localization.instructions.md. #}
 {% extends "_base.html" %}
-{% block title %}Continue to your account{% endblock %}
+{% block title %}{% endblock %}
 
 {% block header %}
+<script type="text/javascript">
+	{% include "l10n_sso_redirect_confirm.js" without context %}
+	window.PANGEA_L10N_TITLE = "redirectConfirm.title";
+	window.PANGEA_L10N_VARS = { display_url: {{ display_url | tojson }} };
+</script>
 <style type="text/css">
 	{% include "sso.css" without context %}
 
@@ -80,12 +87,12 @@
 
 {% block body %}
 <header>
-	<h1>Continue to your account</h1>
+	<h1 data-l10n="redirectConfirm.heading"></h1>
 </header>
 <main>
 	{% include "sso_partial_profile.html" %}
-	<p class="confirm-trust">Continuing will grant <strong>{{ display_url }}</strong> access to your account.</p>
-	<a href="{{ redirect_url }}" class="primary-button">Continue</a>
+	<p class="confirm-trust" data-l10n-html="redirectConfirm.trust"></p>
+	<a href="{{ redirect_url }}" class="primary-button" data-l10n="redirectConfirm.submit"></a>
 </main>
 {% include "sso_footer.html" without context %}
 

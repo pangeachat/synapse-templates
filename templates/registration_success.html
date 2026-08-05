@@ -1,8 +1,23 @@
+{# Copy comes from l10n/ and is rendered in the browser, not from this file;
+   see .github/instructions/localization.instructions.md.
+
+   Synapse renders this one ONCE at startup and caches the result as a string
+   (registration_template_success_html in synapse/config/emailconfig.py), which
+   is fine here: the localization runs in the browser, not in Jinja. That same
+   registration declares no text key, so the `.txt` sibling is dead — the send
+   path, not the file pairing, is what makes a template an email. #}
 {% extends "_base.html" %}
-{% block title %}Verification Success{% endblock %}
+{% block title %}{% endblock %}
+
+{% block header %}
+<script type="text/javascript">
+  {% include "l10n_registration_success.js" without context %}
+  window.PANGEA_L10N_TITLE = "registrationSuccess.title";
+</script>
+{% endblock %}
 
 {% block body %}
 
-<p>Congratulations! Your email has been verified. Please go back to to the app to sign in!</p>
+<p data-l10n="registrationSuccess.body"></p>
 
 {% endblock %}

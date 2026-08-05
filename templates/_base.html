@@ -10,6 +10,13 @@
   <style type="text/css">
     {%- include 'style.css' without context %}
   </style>
+  {# Synapse renders with no locale in scope, so localized pages ship their copy
+     as a string table and render it in the browser. Pages that aren't localized
+     yet inherit this harmlessly: PangeaL10n.apply() is a no-op without a table.
+     See .github/instructions/localization.instructions.md. #}
+  <script type="text/javascript">
+    {% include "l10n.js" without context %}
+  </script>
   {% block header %}{% endblock %}
 </head>
 
@@ -19,6 +26,12 @@
   </header>
 
   {% block body %}{% endblock %}
+
+  {# Synchronous and last in <body>: the elements exist, and their text is set
+     before the browser paints them, so nothing flashes. #}
+  <script type="text/javascript">
+    PangeaL10n.apply();
+  </script>
 </body>
 
 </html>

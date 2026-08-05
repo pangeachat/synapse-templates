@@ -9,11 +9,18 @@
     so the choice is not offered.
   - Pairs with our sso_auth_account_details.js (auto-submit once the
     username availability check passes).
+  - Copy comes from l10n/ and is rendered in the browser, not from this file;
+    see .github/instructions/localization.instructions.md.
 #}
 {% extends "_base.html" %}
-{% block title %}Create your account{% endblock %}
+{% block title %}{% endblock %}
 
 {% block header %}
+<script type="text/javascript">
+  {% include "l10n_sso_auth_account_details.js" without context %}
+  window.PANGEA_L10N_TITLE = "accountDetails.title";
+  window.PANGEA_L10N_VARS = { server_name: {{ server_name | tojson }} };
+</script>
 <script type="text/javascript">
   let wasKeyboard = false;
   document.addEventListener("mousedown", function() { wasKeyboard = false; });
@@ -99,19 +106,19 @@
 
 {% block body %}
 <header>
-  <h1>Create your account</h1>
-  <p>This is required. Continue to create your account on {{ server_name }}. You can't change this later.</p>
+  <h1 data-l10n="accountDetails.heading"></h1>
+  <p data-l10n="accountDetails.intro"></p>
 </header>
 <main>
   <form method="post" class="form__input" id="form">
     <div class="username_input" id="username_input">
-      <label for="field-username">Username (required)</label>
+      <label for="field-username" data-l10n="accountDetails.usernameLabel"></label>
       <div class="prefix">@</div>
       <input type="text" name="username" id="field-username" value="{{ user_attributes.localpart }}" autofocus autocorrect="off" autocapitalize="none">
       <div class="postfix">:{{ server_name }}</div>
     </div>
     <output for="username_input" id="field-username-output"></output>
-    <input type="submit" value="Continue" class="primary-button">
+    <input type="submit" data-l10n="accountDetails.submit" data-l10n-attr="value" class="primary-button">
     {% if user_attributes.avatar_url %}
     <input type="hidden" name="use_avatar" value="true">
     {% endif %}

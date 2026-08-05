@@ -1,7 +1,15 @@
+{# Copy comes from l10n/ and is rendered in the browser, not from this file;
+   see .github/instructions/localization.instructions.md. The server-supplied
+   error description and code stay in the HTML: they aren't translatable copy,
+   and leaving them there means a no-JS visitor still sees what went wrong. #}
 {% extends "_base.html" %}
-{% block title %}Authentication failed{% endblock %}
+{% block title %}{% endblock %}
 
 {% block header %}
+<script type="text/javascript">
+    {% include "l10n_sso_error.js" without context %}
+    window.PANGEA_L10N_TITLE = "ssoError.title";
+</script>
 {% if error == "unauthorised" %}
 <style type="text/css">
     {% include "sso.css" without context %}
@@ -18,25 +26,18 @@
 {# If an error of unauthorised is returned it means we have actively rejected their login #}
 {% if error == "unauthorised" %}
         <header>
-            <p>You are not allowed to log in here.</p>
+            <p data-l10n="ssoError.unauthorised"></p>
         </header>
 {% else %}
         <header>
-            <h1>There was an error</h1>
+            <h1 data-l10n="ssoError.heading"></h1>
             <p>
                 <strong id="errormsg">{{ error_description }}</strong>
             </p>
-            <p>
-                If you are seeing this page after clicking a link sent to you via email,
-                make sure you only click the confirmation link once, and that you open
-                the validation link in the same client you're logging in from.
-            </p>
-            <p>
-                Try logging in again to Pangea Chat and if the problem persists
-                please contact the server's administrator.
-            </p>
+            <p data-l10n="ssoError.emailLinkHint"></p>
+            <p data-l10n="ssoError.retryHint"></p>
             <div id="error_code">
-                <p><strong>Error code</strong></p>
+                <p><strong data-l10n="ssoError.errorCodeLabel"></strong></p>
                 <p>{{ error }}</p>
             </div>
         </header>

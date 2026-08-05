@@ -1,0 +1,31 @@
+name: l10n sync check
+
+# Two gates on the sign-up/login page copy, both described in
+# .github/instructions/localization.instructions.md:
+#   - new/changed English copy vs the translations (check_l10n_sync.py)
+#   - the generated string tables vs the catalog (emit_l10n.py --check)
+
+on:
+  pull_request:
+    paths:
+      - "l10n/**"
+      - "templates/l10n*.js"
+      - "scripts/translate/**"
+      - ".github/workflows/l10n_sync_check.yaml"
+
+jobs:
+  l10n-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch base branch
+        run: git fetch origin ${{ github.base_ref }} --depth=1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check generated string tables are current
+        run: python scripts/translate/emit_l10n.py --check
+      - name: Check translation sync
+        run: python scripts/translate/check_l10n_sync.py --base origin/${{ github.base_ref }}

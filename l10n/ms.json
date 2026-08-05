@@ -1,6 +1,6 @@
 {
     "@@locale": "ms",
-    "@@last_modified": "2026-08-05 09:48:35.852585",
+    "@@last_modified": "2026-08-05 12:22:13.409534",
     "accountDetails.title": "Cipta akaun anda",
     "accountDetails.heading": "Cipta akaun anda",
     "accountDetails.intro": "Ini diperlukan. Teruskan untuk mencipta akaun anda di {{ server_name }}. Anda tidak boleh menukar ini kemudian.",
@@ -14,15 +14,21 @@
     "accountDetails.errorNotAvailable": "{{ username }} tidak tersedia, sila pilih yang lain.",
     "redirectConfirm.title": "Teruskan ke akaun anda",
     "redirectConfirm.heading": "Teruskan ke akaun anda",
-    "redirectConfirm.trust": "Meneruskan akan memberikan <strong>{{ display_url }}</strong> akses kepada akaun anda.",
+    "redirectConfirm.trust": "Meneruskan akan memberikan akses <strong>{{ display_url }}</strong> ke akaun anda.",
     "redirectConfirm.submit": "Teruskan",
     "ssoError.title": "Pengesahan gagal",
     "ssoError.unauthorised": "Anda tidak dibenarkan untuk log masuk di sini.",
     "ssoError.heading": "Terdapat ralat",
-    "ssoError.emailLinkHint": "Jika anda melihat halaman ini selepas mengklik pautan yang dihantar kepada anda melalui e-mel, pastikan anda hanya mengklik pautan pengesahan sekali, dan anda membuka pautan pengesahan dalam klien yang sama yang anda gunakan untuk log masuk.",
+    "ssoError.emailLinkHint": "Jika anda melihat halaman ini selepas mengklik pautan yang dihantar kepada anda melalui e-mel, pastikan anda hanya mengklik pautan pengesahan sekali, dan anda membuka pautan pengesahan dalam klien yang sama anda log masuk.",
     "ssoError.retryHint": "Cuba log masuk semula ke Pangea Chat dan jika masalah berterusan sila hubungi pentadbir pelayan.",
     "ssoError.errorCodeLabel": "Kod ralat",
     "authSuccess.title": "Berjaya!",
     "authSuccess.thankYou": "Terima kasih",
-    "authSuccess.mayClose": "Anda kini boleh menutup tetingkap ini dan kembali ke aplikasi"
+    "authSuccess.mayClose": "Anda kini boleh menutup tetingkap ini dan kembali ke aplikasi",
+    "registrationSuccess.title": "Pengesahan Berjaya",
+    "registrationSuccess.body": "Tahniah! E-mel anda telah disahkan. Sila kembali ke aplikasi untuk log masuk!",
+    "passwordResetConfirm.title": "Pengesahan penetapan semula kata laluan",
+    "passwordResetConfirm.intro": "Anda telah meminta untuk <strong>menetapkan semula kata laluan akaun Pangea Chat anda</strong>. Klik pautan di bawah untuk mengesahkan tindakan ini.",
+    "passwordResetConfirm.disclaimer": "Jika anda tidak bermaksud untuk melakukan ini, sila tutup halaman ini dan kata laluan anda tidak akan diubah.",
+    "passwordResetConfirm.submit": "Sahkan penukaran kata laluan saya"
 }

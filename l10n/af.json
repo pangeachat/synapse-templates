@@ -1,9 +1,9 @@
 {
     "@@locale": "af",
-    "@@last_modified": "2026-08-05 09:48:08.323479",
+    "@@last_modified": "2026-08-05 12:21:38.804214",
     "accountDetails.title": "Skep jou rekening",
     "accountDetails.heading": "Skep jou rekening",
-    "accountDetails.intro": "Dit is nodig. Gaan voort om jou rekening op {{ server_name }} te skep. Jy kan dit later nie verander nie.",
+    "accountDetails.intro": "Dit is nodig. Gaan voort om jou rekening op {{ server_name }} te skep. Jy kan dit nie later verander nie.",
     "accountDetails.usernameLabel": "Gebruikersnaam (vereis)",
     "accountDetails.submit": "Gaan voort",
     "accountDetails.checking": "Kontroleer of gebruikersnaam beskikbaar is …",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Foutkode",
     "authSuccess.title": "Sukses!",
     "authSuccess.thankYou": "Dankie",
-    "authSuccess.mayClose": "Jy kan nou hierdie venster toemaak en terugkeer na die toepassing"
+    "authSuccess.mayClose": "Jy kan nou hierdie venster toemaak en terugkeer na die toepassing",
+    "registrationSuccess.title": "Verifikasie Suksesvol",
+    "registrationSuccess.body": "Baie geluk! Jou e-pos is geverifieer. Gaan asseblief terug na die toepassing om aan te meld!",
+    "passwordResetConfirm.title": "Wagwoordterugstelling bevestiging",
+    "passwordResetConfirm.intro": "Jy het versoek om <strong>jou Pangea Chat rekeningwagwoord terug te stel</strong>. Klik die skakel hieronder om hierdie aksie te bevestig.",
+    "passwordResetConfirm.disclaimer": "As jy nie van plan was om dit te doen nie, maak asseblief hierdie bladsy toe en jou wagwoord sal nie verander word nie.",
+    "passwordResetConfirm.submit": "Bevestig die verandering van my wagwoord"
 }

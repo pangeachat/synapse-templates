@@ -1,12 +1,12 @@
 {
     "@@locale": "sk",
-    "@@last_modified": "2026-08-05 09:48:45.317904",
+    "@@last_modified": "2026-08-05 12:22:24.227118",
     "accountDetails.title": "Vytvorte si účet",
     "accountDetails.heading": "Vytvorte si účet",
     "accountDetails.intro": "Toto je povinné. Pokračujte vo vytváraní účtu na {{ server_name }}. Neskôr to už nebudete môcť zmeniť.",
     "accountDetails.usernameLabel": "Používateľské meno (povinné)",
     "accountDetails.submit": "Pokračovať",
-    "accountDetails.checking": "Kontroluje sa dostupnosť používateľského mena …",
+    "accountDetails.checking": "Kontrolujem dostupnosť používateľského mena …",
     "accountDetails.errorRequired": "Toto je povinné. Zadajte používateľské meno",
     "accountDetails.errorTooLong": "Príliš dlhé, zvoľte si kratšie",
     "accountDetails.errorInvalidCharacters": "Neplatné používateľské meno, použite iba {{ allowed_characters }}",
@@ -19,10 +19,16 @@
     "ssoError.title": "Overenie zlyhalo",
     "ssoError.unauthorised": "Nemáte povolenie prihlásiť sa tu.",
     "ssoError.heading": "Vyskytla sa chyba",
-    "ssoError.emailLinkHint": "Ak vidíte túto stránku po kliknutí na odkaz, ktorý vám bol odoslaný e-mailom, uistite sa, že ste potvrdzujúci odkaz klikli iba raz a že overovací odkaz otvárate v rovnakom klientovi, z ktorého sa prihlasujete.",
+    "ssoError.emailLinkHint": "Ak túto stránku vidíte po kliknutí na odkaz, ktorý vám bol zaslaný e-mailom, uistite sa, že ste na potvrdzovací odkaz klikli iba raz a že overovací odkaz otvárate v rovnakom klientovi, z ktorého sa prihlasujete.",
     "ssoError.retryHint": "Skúste sa znova prihlásiť do Pangea Chat a ak problém pretrváva, kontaktujte správcu servera.",
     "ssoError.errorCodeLabel": "Kód chyby",
     "authSuccess.title": "Úspech!",
     "authSuccess.thankYou": "Ďakujeme",
-    "authSuccess.mayClose": "Teraz môžete zatvoriť toto okno a vrátiť sa do aplikácie"
+    "authSuccess.mayClose": "Teraz môžete zavrieť toto okno a vrátiť sa do aplikácie",
+    "registrationSuccess.title": "Overenie úspešné",
+    "registrationSuccess.body": "Gratulujeme! Váš e-mail bol overený. Vráťte sa do aplikácie a prihláste sa!",
+    "passwordResetConfirm.title": "Potvrdenie resetovania hesla",
+    "passwordResetConfirm.intro": "Požiadali ste o <strong>resetovanie hesla k vášmu účtu Pangea Chat</strong>. Kliknite na odkaz nižšie pre potvrdenie tejto akcie.",
+    "passwordResetConfirm.disclaimer": "Ak ste to nemali v úmysle, zatvorte túto stránku a vaše heslo sa nezmení.",
+    "passwordResetConfirm.submit": "Potvrdiť zmenu môjho hesla"
 }

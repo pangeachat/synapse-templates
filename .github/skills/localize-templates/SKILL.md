@@ -53,9 +53,13 @@ Then spot-check before committing:
 
 Commit the catalogs, `l10n/ai-translated-keys.json` (machine-translation provenance, so a later native-speaker correction isn't overwritten by a re-run), and the regenerated `templates/l10n_*.js`.
 
+## Is a template even localizable?
+
+Only pages a browser renders — those are the ones that can read `navigator.language`. **Classify by the send path, not by the file pairing.** A `.txt` sibling looks like an email marker but isn't one: `registration_success.html` has a dead `registration_success.txt` that Synapse never reads, because `synapse/config/emailconfig.py` registers only `registration_template_success_html` with no text key. Meanwhile `already_in_use.html` really is an email — `emailconfig.py` registers the html/text pair and `synapse/rest/client/register.py` builds a `Mailer` from it. Grep Synapse for the template name and see whether a `Mailer` or an HTTP resource consumes it.
+
 ## Adding new copy to a page
 
-1. Add the key to `l10n/en.json`, namespaced by page (`accountDetails.*`, `redirectConfirm.*`, `ssoError.*`, `authSuccess.*`). A new page prefix also needs an entry in `PAGES` in `emit_l10n.py`.
+1. Add the key to `l10n/en.json`, namespaced by page (`accountDetails.*`, `redirectConfirm.*`, `ssoError.*`, `authSuccess.*`, `registrationSuccess.*`, `passwordResetConfirm.*`). A new page prefix also needs an entry in `PAGES` in `emit_l10n.py`.
 2. Reference it from the template: `data-l10n="key"` (text), plus `data-l10n-attr="value"` for an attribute, or `data-l10n-html="key"` when the string carries inline markup. Leave the element **empty** — the copy is rendered from the catalog, never replaced in place. Contract details are in the header comment of `templates/l10n.js`.
 3. Run `backfill_l10n.py --refresh`, then the emitter and both gates above.
 

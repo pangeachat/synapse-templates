@@ -1,6 +1,6 @@
 {
     "@@locale": "az",
-    "@@last_modified": "2026-08-05 09:48:09.453294",
+    "@@last_modified": "2026-08-05 12:21:39.791411",
     "accountDetails.title": "Hesabınızı yaradın",
     "accountDetails.heading": "Hesabınızı yaradın",
     "accountDetails.intro": "Bu tələb olunur. {{ server_name }} üzərində hesabınızı yaratmağa davam edin. Bunu daha sonra dəyişə bilməzsiniz.",
@@ -19,10 +19,16 @@
     "ssoError.title": "Doğrulama uğursuz oldu",
     "ssoError.unauthorised": "Buraya daxil olmağınıza icazə verilmir.",
     "ssoError.heading": "Xəta baş verdi",
-    "ssoError.emailLinkHint": "Əgər sizə e-poçt vasitəsilə göndərilən linkə kliklədikdən sonra bu səhifəni görürsünüzsə, əmin olun ki, təsdiq linkinə yalnız bir dəfə klikləyirsiniz və doğrulama linkini daxil olduğunuz eyni müştəridə açırsınız.",
-    "ssoError.retryHint": "Pangea Chat-ə yenidən daxil olmağa cəhd edin və problem davam edərsə, zəhmət olmasa, serverin administratoru ilə əlaqə saxlayın.",
+    "ssoError.emailLinkHint": "Əgər bu səhifəni sizə e-poçt vasitəsilə göndərilən linkə kliklədikdən sonra görürsünüzsə, əmin olun ki, təsdiq linkinə yalnız bir dəfə klikləmisiniz və doğrulama linkini daxil olduğunuz eyni müştəridə açmısınız.",
+    "ssoError.retryHint": "Pangea Chat-a yenidən daxil olmağa cəhd edin və problem davam edərsə, zəhmət olmasa, serverin administratoru ilə əlaqə saxlayın.",
     "ssoError.errorCodeLabel": "Xəta kodu",
     "authSuccess.title": "Uğurlu!",
     "authSuccess.thankYou": "Təşəkkür edirik",
-    "authSuccess.mayClose": "İndi bu pəncərəni bağlaya və tətbiqə qayıda bilərsiniz"
+    "authSuccess.mayClose": "İndi bu pəncərəni bağlayıb tətbiqə qayıda bilərsiniz",
+    "registrationSuccess.title": "Doğrulama Uğurlu",
+    "registrationSuccess.body": "Təbriklər! E-poçtunuz təsdiqləndi. Zəhmət olmasa, daxil olmaq üçün tətbiqə qayıdın!",
+    "passwordResetConfirm.title": "Şifrə sıfırlama təsdiqi",
+    "passwordResetConfirm.intro": "Siz <strong>Pangea Chat hesabınızın şifrəsini sıfırlamaq</strong> üçün sorğu göndərmisiniz. Bu əməliyyatı təsdiqləmək üçün aşağıdakı linkə klikləyin.",
+    "passwordResetConfirm.disclaimer": "Əgər bunu etmək niyyətində deyildinizsə, zəhmət olmasa, bu səhifəni bağlayın və şifrəniz dəyişdirilməyəcək.",
+    "passwordResetConfirm.submit": "Şifrəmin dəyişdirilməsini təsdiqləyin"
 }

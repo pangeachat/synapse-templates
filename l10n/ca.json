@@ -1,6 +1,6 @@
 {
     "@@locale": "ca",
-    "@@last_modified": "2026-08-05 09:48:08.198984",
+    "@@last_modified": "2026-08-05 12:21:38.441752",
     "accountDetails.title": "Crea el teu compte",
     "accountDetails.heading": "Crea el teu compte",
     "accountDetails.intro": "Això és obligatori. Continua per crear el teu compte a {{ server_name }}. No podràs canviar-ho més tard.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Codi d'error",
     "authSuccess.title": "Èxit!",
     "authSuccess.thankYou": "Gràcies",
-    "authSuccess.mayClose": "Ara pots tancar aquesta finestra i tornar a l'aplicació"
+    "authSuccess.mayClose": "Ara pots tancar aquesta finestra i tornar a l'aplicació",
+    "registrationSuccess.title": "Verificació correcta",
+    "registrationSuccess.body": "Enhorabona! El teu correu electrònic ha estat verificat. Si us plau, torna a l'aplicació per iniciar sessió!",
+    "passwordResetConfirm.title": "Confirmació de restabliment de contrasenya",
+    "passwordResetConfirm.intro": "Has sol·licitat <strong>restablir la contrasenya del teu compte de Pangea Chat</strong>. Fes clic a l'enllaç següent per confirmar aquesta acció.",
+    "passwordResetConfirm.disclaimer": "Si no volies fer això, tanca aquesta pàgina i la teva contrasenya no es canviarà.",
+    "passwordResetConfirm.submit": "Confirma el canvi de la meva contrasenya"
 }

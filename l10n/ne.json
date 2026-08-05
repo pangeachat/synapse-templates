@@ -1,6 +1,6 @@
 {
     "@@locale": "ne",
-    "@@last_modified": "2026-08-05 09:48:38.838403",
+    "@@last_modified": "2026-08-05 12:22:16.033785",
     "accountDetails.title": "आफ्नो खाता सिर्जना गर्नुहोस्",
     "accountDetails.heading": "आफ्नो खाता सिर्जना गर्नुहोस्",
     "accountDetails.intro": "यो आवश्यक छ। {{ server_name }} मा आफ्नो खाता सिर्जना गर्न जारी राख्नुहोस्। तपाईंले यसलाई पछि परिवर्तन गर्न सक्नुहुन्न।",
@@ -14,7 +14,7 @@
     "accountDetails.errorNotAvailable": "{{ username }} उपलब्ध छैन, कृपया अर्को छान्नुहोस्।",
     "redirectConfirm.title": "आफ्नो खातामा जारी राख्नुहोस्",
     "redirectConfirm.heading": "आफ्नो खातामा जारी राख्नुहोस्",
-    "redirectConfirm.trust": "जारी राख्दा <strong>{{ display_url }}</strong> लाई तपाईंको खातामा पहुँच दिनेछ।",
+    "redirectConfirm.trust": "जारी राख्दा <strong>{{ display_url }}</strong> लाई तपाईंको खातामा पहुँच प्रदान गरिनेछ।",
     "redirectConfirm.submit": "जारी राख्नुहोस्",
     "ssoError.title": "प्रमाणीकरण असफल भयो",
     "ssoError.unauthorised": "तपाईंलाई यहाँ लग इन गर्न अनुमति छैन।",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "त्रुटि कोड",
     "authSuccess.title": "सफलता!",
     "authSuccess.thankYou": "धन्यवाद",
-    "authSuccess.mayClose": "तपाईं अब यो विन्डो बन्द गर्न सक्नुहुन्छ र अनुप्रयोगमा फर्कन सक्नुहुन्छ"
+    "authSuccess.mayClose": "तपाईं अब यो विन्डो बन्द गरेर अनुप्रयोगमा फर्कन सक्नुहुन्छ",
+    "registrationSuccess.title": "प्रमाणीकरण सफल",
+    "registrationSuccess.body": "बधाई छ! तपाईंको इमेल प्रमाणित भएको छ। कृपया साइन इन गर्न एपमा फर्कनुहोस्!",
+    "passwordResetConfirm.title": "पासवर्ड रिसेट पुष्टिकरण",
+    "passwordResetConfirm.intro": "तपाईंले <strong>आफ्नो Pangea Chat खाताको पासवर्ड रिसेट गर्न</strong> अनुरोध गर्नुभएको छ। यो कार्य पुष्टि गर्न तलको लिङ्कमा क्लिक गर्नुहोस्।",
+    "passwordResetConfirm.disclaimer": "यदि तपाईंले यो गर्न चाहनुभएको थिएन भने, कृपया यो पृष्ठ बन्द गर्नुहोस् र तपाईंको पासवर्ड परिवर्तन गरिने छैन।",
+    "passwordResetConfirm.submit": "मेरो पासवर्ड परिवर्तन गर्न पुष्टि गर्नुहोस्"
 }

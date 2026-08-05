@@ -1,12 +1,12 @@
 {
     "@@locale": "mr",
-    "@@last_modified": "2026-08-05 09:48:35.568630",
+    "@@last_modified": "2026-08-05 12:22:12.308385",
     "accountDetails.title": "तुमचे खाते तयार करा",
     "accountDetails.heading": "तुमचे खाते तयार करा",
     "accountDetails.intro": "हे आवश्यक आहे. {{ server_name }} वर तुमचे खाते तयार करणे सुरू ठेवा. तुम्ही हे नंतर बदलू शकत नाही.",
     "accountDetails.usernameLabel": "वापरकर्तानाव (आवश्यक)",
     "accountDetails.submit": "सुरू ठेवा",
-    "accountDetails.checking": "वापरकर्तानाव उपलब्ध आहे का ते तपासत आहे …",
+    "accountDetails.checking": "वापरकर्तानाव उपलब्ध आहे का ते तपासत आहे…",
     "accountDetails.errorRequired": "हे आवश्यक आहे. कृपया वापरकर्तानाव द्या",
     "accountDetails.errorTooLong": "खूप लांब आहे, कृपया काहीतरी लहान निवडा",
     "accountDetails.errorInvalidCharacters": "अवैध वापरकर्तानाव, कृपया फक्त {{ allowed_characters }} वापरा",
@@ -19,10 +19,16 @@
     "ssoError.title": "प्रमाणीकरण अयशस्वी झाले",
     "ssoError.unauthorised": "तुम्हाला येथे लॉग इन करण्याची परवानगी नाही.",
     "ssoError.heading": "एक त्रुटी आली",
-    "ssoError.emailLinkHint": "तुम्ही ईमेलद्वारे पाठवलेल्या लिंकवर क्लिक केल्यानंतर हे पृष्ठ पाहत असाल, तर तुम्ही पुष्टीकरण लिंकवर फक्त एकदाच क्लिक केल्याची खात्री करा आणि तुम्ही ज्या क्लायंटमधून लॉग इन करत आहात त्याच क्लायंटमध्ये प्रमाणीकरण लिंक उघडा.",
+    "ssoError.emailLinkHint": "तुम्ही ईमेलद्वारे पाठवलेल्या लिंकवर क्लिक केल्यानंतर ही पृष्ठ पाहत असाल, तर तुम्ही पुष्टीकरण लिंकवर फक्त एकदाच क्लिक केले असल्याची खात्री करा आणि तुम्ही ज्या क्लायंटमधून लॉग इन करत आहात त्याच क्लायंटमध्ये प्रमाणीकरण लिंक उघडली असल्याची खात्री करा.",
     "ssoError.retryHint": "Pangea Chat मध्ये पुन्हा लॉग इन करण्याचा प्रयत्न करा आणि समस्या कायम राहिल्यास कृपया सर्व्हरच्या प्रशासकाशी संपर्क साधा.",
     "ssoError.errorCodeLabel": "त्रुटी कोड",
     "authSuccess.title": "यशस्वी!",
     "authSuccess.thankYou": "धन्यवाद",
-    "authSuccess.mayClose": "तुम्ही आता ही विंडो बंद करू शकता आणि ॲप्लिकेशनवर परत येऊ शकता"
+    "authSuccess.mayClose": "तुम्ही आता ही विंडो बंद करू शकता आणि ॲप्लिकेशनवर परत येऊ शकता",
+    "registrationSuccess.title": "पडताळणी यशस्वी",
+    "registrationSuccess.body": "अभिनंदन! तुमचा ईमेल सत्यापित झाला आहे. कृपया साइन इन करण्यासाठी ॲपवर परत जा!",
+    "passwordResetConfirm.title": "पासवर्ड रीसेट पुष्टीकरण",
+    "passwordResetConfirm.intro": "तुम्ही <strong>तुमचा Pangea Chat खाते पासवर्ड रीसेट करण्याची विनंती केली आहे</strong>. ही कृती निश्चित करण्यासाठी खालील लिंकवर क्लिक करा.",
+    "passwordResetConfirm.disclaimer": "तुम्ही हे करू इच्छित नसल्यास, कृपया हे पृष्ठ बंद करा आणि तुमचा पासवर्ड बदलला जाणार नाही.",
+    "passwordResetConfirm.submit": "माझा पासवर्ड बदलण्याची पुष्टी करा"
 }

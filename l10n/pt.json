@@ -1,6 +1,6 @@
 {
     "@@locale": "pt",
-    "@@last_modified": "2026-08-05 09:48:41.190745",
+    "@@last_modified": "2026-08-05 12:22:20.077069",
     "accountDetails.title": "Crie sua conta",
     "accountDetails.heading": "Crie sua conta",
     "accountDetails.intro": "Isso é obrigatório. Continue para criar sua conta em {{ server_name }}. Você não poderá alterar isso mais tarde.",
@@ -16,13 +16,19 @@
     "redirectConfirm.heading": "Continuar para sua conta",
     "redirectConfirm.trust": "Ao continuar, você concederá a <strong>{{ display_url }}</strong> acesso à sua conta.",
     "redirectConfirm.submit": "Continuar",
-    "ssoError.title": "Falha na autenticação",
+    "ssoError.title": "Autenticação falhou",
     "ssoError.unauthorised": "Você não tem permissão para fazer login aqui.",
     "ssoError.heading": "Ocorreu um erro",
     "ssoError.emailLinkHint": "Se você está vendo esta página após clicar em um link enviado por e-mail, certifique-se de clicar no link de confirmação apenas uma vez e de abrir o link de validação no mesmo cliente de onde você está fazendo login.",
     "ssoError.retryHint": "Tente fazer login novamente no Pangea Chat e, se o problema persistir, entre em contato com o administrador do servidor.",
     "ssoError.errorCodeLabel": "Código de erro",
     "authSuccess.title": "Sucesso!",
-    "authSuccess.thankYou": "Obrigado",
-    "authSuccess.mayClose": "Você pode fechar esta janela e retornar ao aplicativo"
+    "authSuccess.thankYou": "Obrigado(a)",
+    "authSuccess.mayClose": "Você pode fechar esta janela e retornar ao aplicativo",
+    "registrationSuccess.title": "Verificação de Sucesso",
+    "registrationSuccess.body": "Parabéns! Seu e-mail foi verificado. Por favor, volte ao aplicativo para fazer login!",
+    "passwordResetConfirm.title": "Confirmação de redefinição de senha",
+    "passwordResetConfirm.intro": "Você solicitou a <strong>redefinição da senha da sua conta Pangea Chat</strong>. Clique no link abaixo para confirmar esta ação.",
+    "passwordResetConfirm.disclaimer": "Se você não pretendia fazer isso, feche esta página e sua senha não será alterada.",
+    "passwordResetConfirm.submit": "Confirmar alteração da minha senha"
 }

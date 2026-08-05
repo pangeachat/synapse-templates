@@ -1,6 +1,6 @@
 {
     "@@locale": "sq",
-    "@@last_modified": "2026-08-05 09:48:48.071260",
+    "@@last_modified": "2026-08-05 12:22:28.371560",
     "accountDetails.title": "Krijo llogarinë tënde",
     "accountDetails.heading": "Krijo llogarinë tënde",
     "accountDetails.intro": "Kjo është e detyrueshme. Vazhdo për të krijuar llogarinë tënde në {{ server_name }}. Nuk mund ta ndryshosh këtë më vonë.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Kodi i gabimit",
     "authSuccess.title": "Sukses!",
     "authSuccess.thankYou": "Faleminderit",
-    "authSuccess.mayClose": "Tani mund ta mbyllni këtë dritare dhe të ktheheni te aplikacioni"
+    "authSuccess.mayClose": "Tani mund ta mbyllni këtë dritare dhe të ktheheni te aplikacioni",
+    "registrationSuccess.title": "Verifikimi i suksesshëm",
+    "registrationSuccess.body": "Urime! Emaili juaj është verifikuar. Ju lutemi kthehuni te aplikacioni për t'u identifikuar!",
+    "passwordResetConfirm.title": "Konfirmimi i rivendosjes së fjalëkalimit",
+    "passwordResetConfirm.intro": "Keni kërkuar të <strong>rivendosni fjalëkalimin e llogarisë tuaj në Pangea Chat</strong>. Klikoni lidhjen më poshtë për të konfirmuar këtë veprim.",
+    "passwordResetConfirm.disclaimer": "Nëse nuk keni dashur ta bëni këtë, ju lutemi mbyllni këtë faqe dhe fjalëkalimi juaj nuk do të ndryshohet.",
+    "passwordResetConfirm.submit": "Konfirmo ndryshimin e fjalëkalimit tim"
 }

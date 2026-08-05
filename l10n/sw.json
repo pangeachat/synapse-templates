@@ -1,6 +1,6 @@
 {
     "@@locale": "sw",
-    "@@last_modified": "2026-08-05 09:48:50.705681",
+    "@@last_modified": "2026-08-05 12:22:30.834218",
     "accountDetails.title": "Fungua akaunti yako",
     "accountDetails.heading": "Fungua akaunti yako",
     "accountDetails.intro": "Hii inahitajika. Endelea kufungua akaunti yako kwenye {{ server_name }}. Huwezi kubadilisha hii baadaye.",
@@ -9,7 +9,7 @@
     "accountDetails.checking": "Inachunguza kama jina la mtumiaji linapatikana …",
     "accountDetails.errorRequired": "Hii inahitajika. Tafadhali toa jina la mtumiaji",
     "accountDetails.errorTooLong": "Ndefu sana, tafadhali chagua fupi zaidi",
-    "accountDetails.errorInvalidCharacters": "Jina la mtumiaji si sahihi, tafadhali tumia tu {{ allowed_characters }}",
+    "accountDetails.errorInvalidCharacters": "Jina la mtumiaji si sahihi, tafadhali tumia herufi hizi tu {{ allowed_characters }}",
     "accountDetails.allowedCharacters": "herufi ndogo, nambari, ., _, -, /, =",
     "accountDetails.errorNotAvailable": "{{ username }} haipatikani, tafadhali chagua nyingine.",
     "redirectConfirm.title": "Endelea kwenye akaunti yako",
@@ -19,10 +19,16 @@
     "ssoError.title": "Uthibitishaji umeshindwa",
     "ssoError.unauthorised": "Huruhusiwi kuingia hapa.",
     "ssoError.heading": "Kulikuwa na hitilafu",
-    "ssoError.emailLinkHint": "Ikiwa unaona ukurasa huu baada ya kubofya kiungo ulichotumwa kupitia barua pepe, hakikisha unabonyeza kiungo cha uthibitisho mara moja tu, na kwamba unafungua kiungo cha uthibitisho katika mteja yule yule unayeingia kutoka.",
+    "ssoError.emailLinkHint": "Ikiwa unaona ukurasa huu baada ya kubofya kiungo ulichotumwa kupitia barua pepe, hakikisha unabonyeza kiungo cha uthibitisho mara moja tu, na kwamba unafungua kiungo cha uthibitishaji katika mteja yule yule unayetumia kuingia.",
     "ssoError.retryHint": "Jaribu kuingia tena kwenye Pangea Chat na ikiwa tatizo litaendelea tafadhali wasiliana na msimamizi wa seva.",
     "ssoError.errorCodeLabel": "Msimbo wa hitilafu",
-    "authSuccess.title": "Imefanikiwa!",
+    "authSuccess.title": "Imefaulu!",
     "authSuccess.thankYou": "Asante",
-    "authSuccess.mayClose": "Sasa unaweza kufunga dirisha hili na kurudi kwenye programu"
+    "authSuccess.mayClose": "Sasa unaweza kufunga dirisha hili na kurudi kwenye programu",
+    "registrationSuccess.title": "Uthibitishaji Umefaulu",
+    "registrationSuccess.body": "Hongera! Barua pepe yako imethibitishwa. Tafadhali rudi kwenye programu ili uingie!",
+    "passwordResetConfirm.title": "Uthibitisho wa kuweka upya nenosiri",
+    "passwordResetConfirm.intro": "Umeomba <strong>kuweka upya nenosiri la akaunti yako ya Pangea Chat</strong>. Bofya kiungo hapa chini ili kuthibitisha hatua hii.",
+    "passwordResetConfirm.disclaimer": "Ikiwa haukukusudia kufanya hivi, tafadhali funga ukurasa huu na nenosiri lako halitabadilishwa.",
+    "passwordResetConfirm.submit": "Thibitisha kubadilisha nenosiri langu"
 }

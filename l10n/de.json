@@ -1,6 +1,6 @@
 {
     "@@locale": "de",
-    "@@last_modified": "2026-08-05 09:48:13.517188",
+    "@@last_modified": "2026-08-05 12:21:44.495902",
     "accountDetails.title": "Konto erstellen",
     "accountDetails.heading": "Konto erstellen",
     "accountDetails.intro": "Dies ist erforderlich. Fahren Sie fort, um Ihr Konto auf {{ server_name }} zu erstellen. Sie können dies später nicht mehr ändern.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Fehlercode",
     "authSuccess.title": "Erfolg!",
     "authSuccess.thankYou": "Vielen Dank",
-    "authSuccess.mayClose": "Sie können dieses Fenster jetzt schließen und zur Anwendung zurückkehren"
+    "authSuccess.mayClose": "Sie können dieses Fenster jetzt schließen und zur Anwendung zurückkehren",
+    "registrationSuccess.title": "Verifizierung erfolgreich",
+    "registrationSuccess.body": "Herzlichen Glückwunsch! Ihre E-Mail wurde verifiziert. Bitte kehren Sie zur App zurück, um sich anzumelden!",
+    "passwordResetConfirm.title": "Passwort-Reset-Bestätigung",
+    "passwordResetConfirm.intro": "Sie haben beantragt, <strong>Ihr Pangea Chat-Kontopasswort zurückzusetzen</strong>. Klicken Sie auf den untenstehenden Link, um diese Aktion zu bestätigen.",
+    "passwordResetConfirm.disclaimer": "Wenn Sie dies nicht beabsichtigt haben, schließen Sie diese Seite und Ihr Passwort wird nicht geändert.",
+    "passwordResetConfirm.submit": "Passwortänderung bestätigen"
 }

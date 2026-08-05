@@ -1,12 +1,12 @@
 {
     "@@locale": "nl",
-    "@@last_modified": "2026-08-05 09:48:38.158692",
+    "@@last_modified": "2026-08-05 12:22:15.220835",
     "accountDetails.title": "Maak je account aan",
     "accountDetails.heading": "Maak je account aan",
-    "accountDetails.intro": "Dit is verplicht. Ga verder om je account aan te maken op {{ server_name }}. Je kunt dit later niet meer wijzigen.",
+    "accountDetails.intro": "Dit is verplicht. Ga verder om je account aan te maken op {{ server_name }}. Dit kun je later niet meer wijzigen.",
     "accountDetails.usernameLabel": "Gebruikersnaam (verplicht)",
     "accountDetails.submit": "Doorgaan",
-    "accountDetails.checking": "Controleren of gebruikersnaam beschikbaar is …",
+    "accountDetails.checking": "Controleren of gebruikersnaam beschikbaar is…",
     "accountDetails.errorRequired": "Dit is verplicht. Geef een gebruikersnaam op",
     "accountDetails.errorTooLong": "Te lang, kies iets korter",
     "accountDetails.errorInvalidCharacters": "Ongeldige gebruikersnaam, gebruik alleen {{ allowed_characters }}",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Foutcode",
     "authSuccess.title": "Succes!",
     "authSuccess.thankYou": "Bedankt",
-    "authSuccess.mayClose": "Je kunt dit venster nu sluiten en terugkeren naar de applicatie"
+    "authSuccess.mayClose": "Je kunt dit venster nu sluiten en terugkeren naar de applicatie",
+    "registrationSuccess.title": "Verificatie geslaagd",
+    "registrationSuccess.body": "Gefeliciteerd! Je e-mail is geverifieerd. Ga terug naar de app om in te loggen!",
+    "passwordResetConfirm.title": "Wachtwoordherstelbevestiging",
+    "passwordResetConfirm.intro": "Je hebt een verzoek ingediend om <strong>het wachtwoord van je Pangea Chat-account opnieuw in te stellen</strong>. Klik op de onderstaande link om deze actie te bevestigen.",
+    "passwordResetConfirm.disclaimer": "Als je dit niet wilde doen, sluit dan deze pagina en je wachtwoord wordt niet gewijzigd.",
+    "passwordResetConfirm.submit": "Bevestig het wijzigen van mijn wachtwoord"
 }

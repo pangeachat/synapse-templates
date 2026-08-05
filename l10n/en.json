@@ -23,5 +23,11 @@
     "ssoError.errorCodeLabel": "Error code",
     "authSuccess.title": "Success!",
     "authSuccess.thankYou": "Thank you",
-    "authSuccess.mayClose": "You may now close this window and return to the application"
+    "authSuccess.mayClose": "You may now close this window and return to the application",
+    "registrationSuccess.title": "Verification Success",
+    "registrationSuccess.body": "Congratulations! Your email has been verified. Please go back to the app to sign in!",
+    "passwordResetConfirm.title": "Password reset confirmation",
+    "passwordResetConfirm.intro": "You have requested to <strong>reset your Pangea Chat account password</strong>. Click the link below to confirm this action.",
+    "passwordResetConfirm.disclaimer": "If you did not mean to do this, please close this page and your password will not be changed.",
+    "passwordResetConfirm.submit": "Confirm changing my password"
 }

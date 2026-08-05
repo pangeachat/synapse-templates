@@ -1,6 +1,6 @@
 {
     "@@locale": "ar",
-    "@@last_modified": "2026-08-05 09:48:08.610818",
+    "@@last_modified": "2026-08-05 12:21:37.634429",
     "accountDetails.title": "أنشئ حسابك",
     "accountDetails.heading": "أنشئ حسابك",
     "accountDetails.intro": "هذا مطلوب. تابع لإنشاء حسابك على {{ server_name }}. لا يمكنك تغيير هذا لاحقًا.",
@@ -8,7 +8,7 @@
     "accountDetails.submit": "متابعة",
     "accountDetails.checking": "جارٍ التحقق مما إذا كان اسم المستخدم متاحًا…",
     "accountDetails.errorRequired": "هذا مطلوب. يرجى تقديم اسم مستخدم",
-    "accountDetails.errorTooLong": "طويل جدًا، يرجى اختيار شيء أقصر",
+    "accountDetails.errorTooLong": "طويل جدًا، يرجى اختيار اسم أقصر",
     "accountDetails.errorInvalidCharacters": "اسم مستخدم غير صالح، يرجى استخدام {{ allowed_characters }} فقط",
     "accountDetails.allowedCharacters": "أحرف صغيرة، أرقام، .، _، -، /، =",
     "accountDetails.errorNotAvailable": "{{ username }} غير متاح، يرجى اختيار اسم آخر.",
@@ -19,10 +19,16 @@
     "ssoError.title": "فشل المصادقة",
     "ssoError.unauthorised": "غير مسموح لك بتسجيل الدخول هنا.",
     "ssoError.heading": "حدث خطأ",
-    "ssoError.emailLinkHint": "إذا كنت ترى هذه الصفحة بعد النقر على رابط تم إرساله إليك عبر البريد الإلكتروني، فتأكد من النقر على رابط التأكيد مرة واحدة فقط، وأنك تفتح رابط التحقق في نفس العميل الذي تسجل الدخول منه.",
-    "ssoError.retryHint": "حاول تسجيل الدخول مرة أخرى إلى Pangea Chat، وإذا استمرت المشكلة يرجى الاتصال بمسؤول الخادم.",
+    "ssoError.emailLinkHint": "إذا كنت ترى هذه الصفحة بعد النقر على رابط أُرسل إليك عبر البريد الإلكتروني، فتأكد من النقر على رابط التأكيد مرة واحدة فقط، وأنك تفتح رابط التحقق في نفس العميل الذي تسجل الدخول منه.",
+    "ssoError.retryHint": "حاول تسجيل الدخول مرة أخرى إلى Pangea Chat، وإذا استمرت المشكلة، يرجى الاتصال بمسؤول الخادم.",
     "ssoError.errorCodeLabel": "رمز الخطأ",
     "authSuccess.title": "نجاح!",
     "authSuccess.thankYou": "شكرًا لك",
-    "authSuccess.mayClose": "يمكنك الآن إغلاق هذه النافذة والعودة إلى التطبيق"
+    "authSuccess.mayClose": "يمكنك الآن إغلاق هذه النافذة والعودة إلى التطبيق",
+    "registrationSuccess.title": "نجاح التحقق",
+    "registrationSuccess.body": "تهانينا! تم التحقق من بريدك الإلكتروني. يرجى العودة إلى التطبيق لتسجيل الدخول!",
+    "passwordResetConfirm.title": "تأكيد إعادة تعيين كلمة المرور",
+    "passwordResetConfirm.intro": "لقد طلبت <strong>إعادة تعيين كلمة مرور حسابك في Pangea Chat</strong>. انقر على الرابط أدناه لتأكيد هذا الإجراء.",
+    "passwordResetConfirm.disclaimer": "إذا لم تكن تقصد القيام بذلك، يرجى إغلاق هذه الصفحة ولن يتم تغيير كلمة مرورك.",
+    "passwordResetConfirm.submit": "تأكيد تغيير كلمة المرور الخاصة بي"
 }

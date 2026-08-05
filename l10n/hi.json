@@ -1,6 +1,6 @@
 {
     "@@locale": "hi",
-    "@@last_modified": "2026-08-05 09:48:19.678771",
+    "@@last_modified": "2026-08-05 12:21:52.451976",
     "accountDetails.title": "अपना खाता बनाएँ",
     "accountDetails.heading": "अपना खाता बनाएँ",
     "accountDetails.intro": "यह आवश्यक है। {{ server_name }} पर अपना खाता बनाने के लिए जारी रखें। आप इसे बाद में नहीं बदल सकते।",
@@ -8,8 +8,8 @@
     "accountDetails.submit": "जारी रखें",
     "accountDetails.checking": "जाँचा जा रहा है कि उपयोगकर्ता नाम उपलब्ध है या नहीं…",
     "accountDetails.errorRequired": "यह आवश्यक है। कृपया एक उपयोगकर्ता नाम प्रदान करें",
-    "accountDetails.errorTooLong": "बहुत लंबा, कृपया कुछ छोटा चुनें",
-    "accountDetails.errorInvalidCharacters": "अवैध उपयोगकर्ता नाम, कृपया केवल {{ allowed_characters }} का उपयोग करें",
+    "accountDetails.errorTooLong": "बहुत लंबा है, कृपया कुछ छोटा चुनें",
+    "accountDetails.errorInvalidCharacters": "अमान्य उपयोगकर्ता नाम, कृपया केवल {{ allowed_characters }} का उपयोग करें",
     "accountDetails.allowedCharacters": "छोटे अक्षर, अंक, ., _, -, /, =",
     "accountDetails.errorNotAvailable": "{{ username }} उपलब्ध नहीं है, कृपया कोई और चुनें।",
     "redirectConfirm.title": "अपने खाते पर जारी रखें",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "त्रुटि कोड",
     "authSuccess.title": "सफलता!",
     "authSuccess.thankYou": "धन्यवाद",
-    "authSuccess.mayClose": "अब आप इस विंडो को बंद कर सकते हैं और एप्लिकेशन पर वापस जा सकते हैं"
+    "authSuccess.mayClose": "अब आप इस विंडो को बंद कर सकते हैं और एप्लिकेशन पर वापस जा सकते हैं",
+    "registrationSuccess.title": "सत्यापन सफल",
+    "registrationSuccess.body": "बधाई हो! आपका ईमेल सत्यापित हो गया है। कृपया साइन इन करने के लिए ऐप पर वापस जाएँ!",
+    "passwordResetConfirm.title": "पासवर्ड रीसेट की पुष्टि",
+    "passwordResetConfirm.intro": "आपने <strong>अपने Pangea Chat खाते का पासवर्ड रीसेट करने</strong> का अनुरोध किया है। इस कार्रवाई की पुष्टि करने के लिए नीचे दिए गए लिंक पर क्लिक करें।",
+    "passwordResetConfirm.disclaimer": "यदि आपका ऐसा करने का इरादा नहीं था, तो कृपया इस पृष्ठ को बंद कर दें और आपका पासवर्ड नहीं बदला जाएगा।",
+    "passwordResetConfirm.submit": "मेरा पासवर्ड बदलने की पुष्टि करें"
 }

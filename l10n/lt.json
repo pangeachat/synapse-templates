@@ -1,6 +1,6 @@
 {
     "@@locale": "lt",
-    "@@last_modified": "2026-08-05 09:48:32.251684",
+    "@@last_modified": "2026-08-05 12:22:08.211941",
     "accountDetails.title": "Sukurkite paskyrą",
     "accountDetails.heading": "Sukurkite paskyrą",
     "accountDetails.intro": "Tai privaloma. Tęskite paskyros kūrimą {{ server_name }} serveryje. Vėliau negalėsite to pakeisti.",
@@ -19,10 +19,16 @@
     "ssoError.title": "Autentifikavimas nepavyko",
     "ssoError.unauthorised": "Jums neleidžiama čia prisijungti.",
     "ssoError.heading": "Įvyko klaida",
-    "ssoError.emailLinkHint": "Jei matote šį puslapį spustelėję nuorodą, atsiųstą el. paštu, įsitikinkite, kad patvirtinimo nuorodą spustelėjote tik vieną kartą ir kad patvirtinimo nuorodą atidarote tame pačiame kliente, iš kurio prisijungiate.",
+    "ssoError.emailLinkHint": "Jei matote šį puslapį spustelėję nuorodą, atsiųstą jums el. paštu, įsitikinkite, kad patvirtinimo nuorodą spustelėjate tik vieną kartą ir kad patvirtinimo nuorodą atidarote tame pačiame kliente, iš kurio jungiatės.",
     "ssoError.retryHint": "Bandyti prisijungti prie Pangea Chat iš naujo ir, jei problema išlieka, susisiekite su serverio administratoriumi.",
     "ssoError.errorCodeLabel": "Klaidos kodas",
     "authSuccess.title": "Pavyko!",
     "authSuccess.thankYou": "Ačiū",
-    "authSuccess.mayClose": "Dabar galite uždaryti šį langą ir grįžti į programą"
+    "authSuccess.mayClose": "Dabar galite uždaryti šį langą ir grįžti į programą",
+    "registrationSuccess.title": "Patvirtinimas sėkmingas",
+    "registrationSuccess.body": "Sveikiname! Jūsų el. paštas patvirtintas. Grįžkite į programą, kad prisijungtumėte!",
+    "passwordResetConfirm.title": "Slaptažodžio nustatymo iš naujo patvirtinimas",
+    "passwordResetConfirm.intro": "Jūs paprašėte <strong>iš naujo nustatyti savo Pangea Chat paskyros slaptažodį</strong>. Spustelėkite žemiau esančią nuorodą, kad patvirtintumėte šį veiksmą.",
+    "passwordResetConfirm.disclaimer": "Jei nenorėjote to daryti, uždarykite šį puslapį ir jūsų slaptažodis nebus pakeistas.",
+    "passwordResetConfirm.submit": "Patvirtinti slaptažodžio keitimą"
 }

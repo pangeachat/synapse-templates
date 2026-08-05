@@ -1,6 +1,6 @@
 {
     "@@locale": "nb",
-    "@@last_modified": "2026-08-05 09:48:37.269132",
+    "@@last_modified": "2026-08-05 12:22:15.110299",
     "accountDetails.title": "Opprett kontoen din",
     "accountDetails.heading": "Opprett kontoen din",
     "accountDetails.intro": "Dette er påkrevd. Fortsett for å opprette kontoen din på {{ server_name }}. Du kan ikke endre dette senere.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Feilkode",
     "authSuccess.title": "Vellykket!",
     "authSuccess.thankYou": "Takk",
-    "authSuccess.mayClose": "Du kan nå lukke dette vinduet og gå tilbake til applikasjonen"
+    "authSuccess.mayClose": "Du kan nå lukke dette vinduet og gå tilbake til applikasjonen",
+    "registrationSuccess.title": "Verifisering vellykket",
+    "registrationSuccess.body": "Gratulerer! E-posten din er bekreftet. Gå tilbake til appen for å logge inn!",
+    "passwordResetConfirm.title": "Bekreftelse av tilbakestilling av passord",
+    "passwordResetConfirm.intro": "Du har bedt om å <strong>tilbakestille passordet for Pangea Chat-kontoen din</strong>. Klikk på lenken nedenfor for å bekrefte denne handlingen.",
+    "passwordResetConfirm.disclaimer": "Hvis du ikke mente å gjøre dette, vennligst lukk denne siden, og passordet ditt vil ikke bli endret.",
+    "passwordResetConfirm.submit": "Bekreft endring av passordet mitt"
 }

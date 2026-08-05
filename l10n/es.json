@@ -1,9 +1,9 @@
 {
     "@@locale": "es",
-    "@@last_modified": "2026-08-05 09:48:14.056258",
+    "@@last_modified": "2026-08-05 12:21:44.702773",
     "accountDetails.title": "Crea tu cuenta",
     "accountDetails.heading": "Crea tu cuenta",
-    "accountDetails.intro": "Esto es obligatorio. Continúa para crear tu cuenta en {{ server_name }}. No podrás cambiar esto más tarde.",
+    "accountDetails.intro": "Esto es obligatorio. Continúa para crear tu cuenta en {{ server_name }}. No podrás cambiarlo más tarde.",
     "accountDetails.usernameLabel": "Nombre de usuario (obligatorio)",
     "accountDetails.submit": "Continuar",
     "accountDetails.checking": "Comprobando si el nombre de usuario está disponible…",
@@ -19,10 +19,16 @@
     "ssoError.title": "Autenticación fallida",
     "ssoError.unauthorised": "No tienes permiso para iniciar sesión aquí.",
     "ssoError.heading": "Hubo un error",
-    "ssoError.emailLinkHint": "Si estás viendo esta página después de hacer clic en un enlace que se te envió por correo electrónico, asegúrate de hacer clic en el enlace de confirmación solo una vez y de abrir el enlace de validación en el mismo cliente desde el que estás iniciando sesión.",
+    "ssoError.emailLinkHint": "Si ves esta página después de hacer clic en un enlace que te enviamos por correo electrónico, asegúrate de hacer clic en el enlace de confirmación solo una vez y de abrir el enlace de validación en el mismo cliente desde el que estás iniciando sesión.",
     "ssoError.retryHint": "Intenta iniciar sesión de nuevo en Pangea Chat y si el problema persiste, por favor contacta al administrador del servidor.",
     "ssoError.errorCodeLabel": "Código de error",
     "authSuccess.title": "¡Éxito!",
     "authSuccess.thankYou": "Gracias",
-    "authSuccess.mayClose": "Ahora puedes cerrar esta ventana y volver a la aplicación"
+    "authSuccess.mayClose": "Ahora puedes cerrar esta ventana y volver a la aplicación",
+    "registrationSuccess.title": "Verificación exitosa",
+    "registrationSuccess.body": "¡Felicidades! Tu correo electrónico ha sido verificado. ¡Por favor, vuelve a la aplicación para iniciar sesión!",
+    "passwordResetConfirm.title": "Confirmación de restablecimiento de contraseña",
+    "passwordResetConfirm.intro": "Has solicitado <strong>restablecer la contraseña de tu cuenta de Pangea Chat</strong>. Haz clic en el siguiente enlace para confirmar esta acción.",
+    "passwordResetConfirm.disclaimer": "Si no tenías la intención de hacer esto, por favor cierra esta página y tu contraseña no será cambiada.",
+    "passwordResetConfirm.submit": "Confirmar el cambio de mi contraseña"
 }

@@ -1,12 +1,12 @@
 {
     "@@locale": "eo",
-    "@@last_modified": "2026-08-05 09:48:14.657463",
+    "@@last_modified": "2026-08-05 12:21:45.964986",
     "accountDetails.title": "Krei vian konton",
     "accountDetails.heading": "Krei vian konton",
     "accountDetails.intro": "Ĉi tio estas deviga. Daŭrigu por krei vian konton ĉe {{ server_name }}. Vi ne povas ŝanĝi tion poste.",
     "accountDetails.usernameLabel": "Uzantnomo (deviga)",
     "accountDetails.submit": "Daŭrigi",
-    "accountDetails.checking": "Kontrolante ĉu la uzantnomo disponeblas...",
+    "accountDetails.checking": "Kontrolante ĉu uzantnomo disponeblas...",
     "accountDetails.errorRequired": "Ĉi tio estas deviga. Bonvolu provizi uzantnomon",
     "accountDetails.errorTooLong": "Tro longa, bonvolu elekti ion pli mallongan",
     "accountDetails.errorInvalidCharacters": "Nevalida uzantnomo, bonvolu uzi nur {{ allowed_characters }}",
@@ -19,10 +19,16 @@
     "ssoError.title": "Aŭtentigo malsukcesis",
     "ssoError.unauthorised": "Vi ne rajtas ensaluti ĉi tie.",
     "ssoError.heading": "Okazis eraro",
-    "ssoError.emailLinkHint": "Se vi vidas ĉi tiun paĝon post klako sur ligilo sendita al vi per retpoŝto, certigu, ke vi klakas la konfirman ligilon nur unufoje, kaj ke vi malfermas la validigan ligilon en la sama kliento de kie vi ensalutas.",
+    "ssoError.emailLinkHint": "Se vi vidas ĉi tiun paĝon post klako de ligilo sendita al vi per retpoŝto, certigu, ke vi nur klakas la konfirman ligilon unufoje, kaj ke vi malfermas la validigan ligilon en la sama kliento de kie vi ensalutas.",
     "ssoError.retryHint": "Provu ensaluti denove al Pangea Chat kaj se la problemo daŭras, bonvolu kontakti la administranton de la servilo.",
     "ssoError.errorCodeLabel": "Eraro-kodo",
     "authSuccess.title": "Sukceso!",
     "authSuccess.thankYou": "Dankon",
-    "authSuccess.mayClose": "Vi nun povas fermi ĉi tiun fenestron kaj reveni al la aplikaĵo"
+    "authSuccess.mayClose": "Vi nun povas fermi ĉi tiun fenestron kaj reveni al la aplikaĵo",
+    "registrationSuccess.title": "Kontrolo Sukcesa",
+    "registrationSuccess.body": "Gratulon! Via retpoŝto estis kontrolita. Bonvolu reiri al la aplikaĵo por ensaluti!",
+    "passwordResetConfirm.title": "Konfirmo de rekomencigo de pasvorto",
+    "passwordResetConfirm.intro": "Vi petis <strong>rekomencigi vian Pangea Chat kontan pasvorton</strong>. Klaku la suban ligilon por konfirmi ĉi tiun agon.",
+    "passwordResetConfirm.disclaimer": "Se vi ne intencis fari tion, bonvolu fermi ĉi tiun paĝon kaj via pasvorto ne estos ŝanĝita.",
+    "passwordResetConfirm.submit": "Konfirmi ŝanĝon de mia pasvorto"
 }

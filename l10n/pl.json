@@ -1,6 +1,6 @@
 {
     "@@locale": "pl",
-    "@@last_modified": "2026-08-05 09:48:40.338782",
+    "@@last_modified": "2026-08-05 12:22:18.470663",
     "accountDetails.title": "Utwórz konto",
     "accountDetails.heading": "Utwórz konto",
     "accountDetails.intro": "To jest wymagane. Kontynuuj, aby utworzyć konto na {{ server_name }}. Nie możesz tego później zmienić.",
@@ -8,13 +8,13 @@
     "accountDetails.submit": "Kontynuuj",
     "accountDetails.checking": "Sprawdzanie dostępności nazwy użytkownika…",
     "accountDetails.errorRequired": "To jest wymagane. Podaj nazwę użytkownika",
-    "accountDetails.errorTooLong": "Za długa, wybierz coś krótszego",
+    "accountDetails.errorTooLong": "Za długa, wybierz krótszą",
     "accountDetails.errorInvalidCharacters": "Nieprawidłowa nazwa użytkownika, użyj tylko {{ allowed_characters }}",
-    "accountDetails.allowedCharacters": "małe litery, cyfry, ., _, -, /, =",
+    "accountDetails.allowedCharacters": "małych liter, cyfr, ., _, -, /, =",
     "accountDetails.errorNotAvailable": "{{ username }} jest niedostępna, wybierz inną.",
     "redirectConfirm.title": "Przejdź do swojego konta",
     "redirectConfirm.heading": "Przejdź do swojego konta",
-    "redirectConfirm.trust": "Kontynuacja spowoduje przyznanie <strong>{{ display_url }}</strong> dostępu do Twojego konta.",
+    "redirectConfirm.trust": "Kontynuowanie spowoduje przyznanie dostępu do Twojego konta <strong>{{ display_url }}</strong>.",
     "redirectConfirm.submit": "Kontynuuj",
     "ssoError.title": "Uwierzytelnianie nie powiodło się",
     "ssoError.unauthorised": "Nie masz uprawnień do logowania się tutaj.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Kod błędu",
     "authSuccess.title": "Sukces!",
     "authSuccess.thankYou": "Dziękujemy",
-    "authSuccess.mayClose": "Możesz teraz zamknąć to okno i wrócić do aplikacji"
+    "authSuccess.mayClose": "Możesz teraz zamknąć to okno i wrócić do aplikacji",
+    "registrationSuccess.title": "Weryfikacja zakończona sukcesem",
+    "registrationSuccess.body": "Gratulacje! Twój e-mail został zweryfikowany. Wróć do aplikacji, aby się zalogować!",
+    "passwordResetConfirm.title": "Potwierdzenie resetowania hasła",
+    "passwordResetConfirm.intro": "Poproszono o <strong>zresetowanie hasła do konta Pangea Chat</strong>. Kliknij poniższy link, aby potwierdzić tę czynność.",
+    "passwordResetConfirm.disclaimer": "Jeśli nie zamierzałeś tego zrobić, zamknij tę stronę, a Twoje hasło nie zostanie zmienione.",
+    "passwordResetConfirm.submit": "Potwierdź zmianę mojego hasła"
 }

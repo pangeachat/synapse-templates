@@ -1,6 +1,6 @@
 {
     "@@locale": "uz",
-    "@@last_modified": "2026-08-05 09:48:54.372430",
+    "@@last_modified": "2026-08-05 12:22:37.142521",
     "accountDetails.title": "Hisobingizni yarating",
     "accountDetails.heading": "Hisobingizni yarating",
     "accountDetails.intro": "Bu majburiy. {{ server_name }} da hisobingizni yaratish uchun davom eting. Keyinchalik buni o'zgartira olmaysiz.",
@@ -19,10 +19,16 @@
     "ssoError.title": "Autentifikatsiya muvaffaqiyatsiz tugadi",
     "ssoError.unauthorised": "Bu yerga kirishga ruxsat berilmagan.",
     "ssoError.heading": "Xatolik yuz berdi",
-    "ssoError.emailLinkHint": "Agar siz ushbu sahifani elektron pochta orqali yuborilgan havolani bosgandan so'ng ko'rayotgan bo'lsangiz, tasdiqlash havolasini faqat bir marta bosganingizga va tasdiqlash havolasini kirayotgan mijozingizda ochganingizga ishonch hosil qiling.",
-    "ssoError.retryHint": "Pangea Chat-ga qayta kirishga harakat qiling va agar muammo davom etsa, server administratoriga murojaat qiling.",
+    "ssoError.emailLinkHint": "Agar siz ushbu sahifani elektron pochta orqali yuborilgan havolani bosganingizdan so'ng ko'rayotgan bo'lsangiz, tasdiqlash havolasini faqat bir marta bosganingizga va tasdiqlash havolasini kirayotgan mijozingizda ochganingizga ishonch hosil qiling.",
+    "ssoError.retryHint": "Pangea Chatga qayta kirishga urinib ko'ring va agar muammo davom etsa, server administratoriga murojaat qiling.",
     "ssoError.errorCodeLabel": "Xato kodi",
     "authSuccess.title": "Muvaffaqiyat!",
     "authSuccess.thankYou": "Rahmat",
-    "authSuccess.mayClose": "Endi siz ushbu oynani yopishingiz va ilovaga qaytishingiz mumkin"
+    "authSuccess.mayClose": "Endi bu oynani yopishingiz va ilovaga qaytishingiz mumkin",
+    "registrationSuccess.title": "Tasdiqlash muvaffaqiyatli",
+    "registrationSuccess.body": "Tabriklaymiz! Sizning elektron pochtangiz tasdiqlandi. Iltimos, kirish uchun ilovaga qayting!",
+    "passwordResetConfirm.title": "Parolni tiklashni tasdiqlash",
+    "passwordResetConfirm.intro": "Siz <strong>Pangea Chat hisobingiz parolini tiklashni</strong> so'radingiz. Ushbu harakatni tasdiqlash uchun quyidagi havolani bosing.",
+    "passwordResetConfirm.disclaimer": "Agar siz buni qilmoqchi bo'lmagan bo'lsangiz, iltimos, ushbu sahifani yoping va parolingiz o'zgartirilmaydi.",
+    "passwordResetConfirm.submit": "Parolimni o'zgartirishni tasdiqlash"
 }

@@ -1,6 +1,6 @@
 {
     "@@locale": "da",
-    "@@last_modified": "2026-08-05 09:48:13.566610",
+    "@@last_modified": "2026-08-05 12:21:44.165378",
     "accountDetails.title": "Opret din konto",
     "accountDetails.heading": "Opret din konto",
     "accountDetails.intro": "Dette er påkrævet. Fortsæt for at oprette din konto på {{ server_name }}. Du kan ikke ændre dette senere.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Fejlkode",
     "authSuccess.title": "Succes!",
     "authSuccess.thankYou": "Tak",
-    "authSuccess.mayClose": "Du kan nu lukke dette vindue og vende tilbage til applikationen"
+    "authSuccess.mayClose": "Du kan nu lukke dette vindue og vende tilbage til applikationen",
+    "registrationSuccess.title": "Verifikation lykkedes",
+    "registrationSuccess.body": "Tillykke! Din e-mail er blevet verificeret. Gå venligst tilbage til appen for at logge ind!",
+    "passwordResetConfirm.title": "Bekræftelse af nulstilling af adgangskode",
+    "passwordResetConfirm.intro": "Du har anmodet om at <strong>nulstille din Pangea Chat-kontos adgangskode</strong>. Klik på linket nedenfor for at bekræfte denne handling.",
+    "passwordResetConfirm.disclaimer": "Hvis du ikke havde til hensigt at gøre dette, bedes du lukke denne side, og din adgangskode vil ikke blive ændret.",
+    "passwordResetConfirm.submit": "Bekræft ændring af min adgangskode"
 }

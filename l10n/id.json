@@ -1,6 +1,6 @@
 {
     "@@locale": "id",
-    "@@last_modified": "2026-08-05 09:48:24.068610",
+    "@@last_modified": "2026-08-05 12:21:57.349708",
     "accountDetails.title": "Buat akun Anda",
     "accountDetails.heading": "Buat akun Anda",
     "accountDetails.intro": "Ini wajib. Lanjutkan untuk membuat akun Anda di {{ server_name }}. Anda tidak dapat mengubahnya nanti.",
@@ -24,5 +24,11 @@
     "ssoError.errorCodeLabel": "Kode kesalahan",
     "authSuccess.title": "Berhasil!",
     "authSuccess.thankYou": "Terima kasih",
-    "authSuccess.mayClose": "Anda sekarang dapat menutup jendela ini dan kembali ke aplikasi"
+    "authSuccess.mayClose": "Anda sekarang dapat menutup jendela ini dan kembali ke aplikasi",
+    "registrationSuccess.title": "Verifikasi Berhasil",
+    "registrationSuccess.body": "Selamat! Email Anda telah diverifikasi. Harap kembali ke aplikasi untuk masuk!",
+    "passwordResetConfirm.title": "Konfirmasi pengaturan ulang kata sandi",
+    "passwordResetConfirm.intro": "Anda telah meminta untuk <strong>mengatur ulang kata sandi akun Pangea Chat Anda</strong>. Klik tautan di bawah untuk mengonfirmasi tindakan ini.",
+    "passwordResetConfirm.disclaimer": "Jika Anda tidak bermaksud melakukan ini, harap tutup halaman ini dan kata sandi Anda tidak akan diubah.",
+    "passwordResetConfirm.submit": "Konfirmasi perubahan kata sandi saya"
 }

@@ -1,6 +1,6 @@
 {
     "@@locale": "ig",
-    "@@last_modified": "2026-08-05 09:48:26.923568",
+    "@@last_modified": "2026-08-05 12:22:01.683081",
     "accountDetails.title": "Mepụta akaụntụ gị",
     "accountDetails.heading": "Mepụta akaụntụ gị",
     "accountDetails.intro": "Nke a dị mkpa. Gaa n'ihu mepụta akaụntụ gị na {{ server_name }}. Ị gaghị agbanwe nke a ma emechaa.",
@@ -18,11 +18,17 @@
     "redirectConfirm.submit": "Gaa n'ihu",
     "ssoError.title": "Nyocha dara",
     "ssoError.unauthorised": "Ekwereghị gị ịbanye ebe a.",
-    "ssoError.heading": "Enwere mmejọ",
-    "ssoError.emailLinkHint": "Ọ bụrụ na ị na-ahụ ibe a mgbe ịpịrị njikọ ezigara gị site na email, gbaa mbọ hụ na ị pịa njikọ nkwenye ahụ naanị otu ugboro, yana na ị mepee njikọ nkwenye ahụ n'otu onye ahịa ị na-abanye na ya.",
-    "ssoError.retryHint": "Gbalịa ịbanye ọzọ na Pangea Chat ma ọ bụrụ na nsogbu ahụ na-aga n'ihu, biko kpọtụrụ onye nchịkwa ihe nkesa.",
-    "ssoError.errorCodeLabel": "Koodu mmejọ",
+    "ssoError.heading": "Enwere mperi",
+    "ssoError.emailLinkHint": "Ọ bụrụ na ị na-ahụ ibe a mgbe ịpịrị njikọ ezigara gị site na email, gbaa mbọ hụ na ị pịrị njikọ nkwenye ahụ otu ugboro, yana na ị mepere njikọ nkwenye ahụ n'otu onye ahịa ị na-eji abanye.",
+    "ssoError.retryHint": "Gbalịa ịbanye ọzọ na Pangea Chat ma ọ bụrụ na nsogbu ahụ ka dị, biko kpọtụrụ onye nchịkwa ihe nkesa.",
+    "ssoError.errorCodeLabel": "Koodu mperi",
     "authSuccess.title": "Ọganihu!",
     "authSuccess.thankYou": "Daalụ",
-    "authSuccess.mayClose": "Ị nwere ike mechie windo a ugbu a wee laghachi na ngwa ahụ"
+    "authSuccess.mayClose": "Ị nwere ike mechie windo a ugbu a wee laghachi na ngwa ahụ",
+    "registrationSuccess.title": "Nkwenye Ọganihu",
+    "registrationSuccess.body": "Ekele! Ekwenyela email gị. Biko laghachi na ngwa ahụ ka ịbanye!",
+    "passwordResetConfirm.title": "Nkwenye nrụpụta paswọọdụ",
+    "passwordResetConfirm.intro": "Ị rịọrọ ka <strong>tọgharịa paswọọdụ akaụntụ Pangea Chat gị</strong>. Pịa njikọ dị n'okpuru ka ị kwado omume a.",
+    "passwordResetConfirm.disclaimer": "Ọ bụrụ na ị bughị n'obi ime nke a, biko mechie ibe a ma agaghị agbanwe paswọọdụ gị.",
+    "passwordResetConfirm.submit": "Kwenye ịgbanwe paswọọdụ m"
 }

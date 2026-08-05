@@ -40,6 +40,8 @@ PAGES = {
     "redirectConfirm": "l10n_sso_redirect_confirm.js",
     "ssoError": "l10n_sso_error.js",
     "authSuccess": "l10n_auth_success.js",
+    "registrationSuccess": "l10n_registration_success.js",
+    "passwordResetConfirm": "l10n_password_reset_confirmation.js",
 }
 
 HEADER = """/*

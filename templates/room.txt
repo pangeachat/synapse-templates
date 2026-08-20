@@ -1,0 +1,11 @@
+{# Overrides Synapse's room.txt. Upstream collapses the room title into the
+   summary line above it and into the first message below it, so the
+   plain-text part arrives as a run-on paragraph. Same content. #}
+{{ room.title }}
+{% if room.invite %}
+You've been invited, join at {{ room.link }}
+{%- else %}
+{%- for notif in room.notifs %}
+{%- include 'notif.txt' with context %}
+{%- endfor %}
+{%- endif %}

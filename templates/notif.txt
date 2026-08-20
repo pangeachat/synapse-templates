@@ -1,0 +1,18 @@
+{# Overrides Synapse's notif.txt. Same content and message-type branches;
+   upstream's whitespace control runs consecutive messages together, so a
+   batched notification -- the common case -- arrives as one paragraph. #}
+{% for message in notif.messages -%}
+{% if message.event_type == "m.room.encrypted" -%}
+An encrypted message.
+
+{% elif message.event_type == "m.room.message" -%}
+{% if message.msgtype == "m.emote" %}* {% endif -%}
+{{ message.sender_name }} ({{ message.ts|format_ts("%H:%M") }})
+{% if message.msgtype in ("m.text", "m.emote", "m.notice", "m.image", "m.file") -%}
+{{ message.body_text_plain }}
+{% else -%}
+A message with unrecognised content.
+{% endif %}
+{% endif -%}
+{% endfor -%}
+View {{ room.title }} at {{ notif.link }}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}{% endblock %}</title>
+  <style type="text/css">
+    {%- include 'style.css' without context %}
+  </style>
+  {% block header %}{% endblock %}
+</head>
+
+{# Email counterpart of _base.html. Deliberately carries no <script>: the
+   localization runtime in _base.html resolves copy from the browser's language,
+   and a mail client has no browser to run it. Every mail client strips it
+   anyway, so in email it is only weight and a spam-filter signal.
+
+   Emails localize by the sender choosing the language, not in the client — see
+   .github/instructions/localization.instructions.md. Keep this base script-free.
+
+   The logo is a PNG, not the SVG _base.html uses: Gmail and Outlook do not
+   render SVG at all. Medium-Light is the dark-ink variant, which is the one that
+   reads against the light header background style.css sets. #}
+<body>
+  <header class="mx_Header">
+    <img src="https://assets.pangea.chat/brand/Medium-Light-Horizontal-Logo.png" width="200" height="54" alt="Pangea Chat" />
+  </header>
+
+  {% block body %}{% endblock %}
+</body>
+
+</html>

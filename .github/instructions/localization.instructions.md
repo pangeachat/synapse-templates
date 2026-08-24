@@ -5,7 +5,7 @@ description: "Localization of Synapse-served sign-up, login, and email copy — 
 
 # Localization — Synapse Templates
 
-Every learner meets Pangea Chat in these pages before they meet the app. A learner whose phone is set to Portuguese should not hit English mid-signup — we offer a language as an L1 only if we can teach in it, so showing English here contradicts the offer. See the client's [localization doc](../../../client/.github/instructions/localization.instructions.md) for the same principle applied to the app UI, and the cross-service [language list](../../.github/.github/instructions/language-list.instructions.md) for what makes a language an L1.
+Every learner meets Pangea Chat in these pages before they meet the app. A learner whose phone is set to Portuguese should not hit English mid-signup — we offer a language as an L1 only if we can teach in it, so showing English here contradicts the offer. See the client's [localization doc](../../../client/.github/instructions/localization.instructions.md) for the same principle applied to the app UI, and the cross-service [language list](../../../.github/.github/instructions/language-list.instructions.md) for what makes a language an L1.
 
 ## What we can localize, and what we can't
 

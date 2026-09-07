@@ -5,7 +5,8 @@ applyTo: "templates/course_invite*"
 # Course Invite Email Template
 
 Cross-repo design: [conference-course-invite.instructions.md](../../../.github/.github/instructions/conference-course-invite.instructions.md)
-Brand tokens: [design-system.instructions.md](../../../business/.github/instructions/design-system.instructions.md)
+Brand tokens: [design-tokens.instructions.md](../../../.github/.github/instructions/design-tokens.instructions.md)
+Brand assets (the logo this template loads from the CDN): [design-system.instructions.md](../../../business/.github/instructions/design-system.instructions.md)
 
 ## Design
 

@@ -19,9 +19,7 @@ Jinja2 HTML + TXT templates (`course_invite.html`, `course_invite.txt`) for the 
 - Optional personal message from inviter
 
 **Constraints**:
-- Standalone HTML (no `_base.html` inheritance) — matches the brand template used by campaign emails
-- Table-based layout for Gmail/Outlook/Apple Mail compatibility
-- Uses brand palette from the design system: purple gradient header (`#5E3ACF` → `#8560E0`), gold accents (`#FDBF01`), purple CTA button, NSF badge footer
+- Extends the shared brand layout `_brand_email_base.html`, the same one the missed-message email uses; see [missed-message-email.instructions.md](missed-message-email.instructions.md#brand-layout). It shows no Unsubscribe link, because course invitations are not yet refusable.
 - Deployed via ansible (same pattern as registration/password-reset templates)
 
 ## Future Work

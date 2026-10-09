@@ -15,4 +15,4 @@ A message with unrecognised content.
 {% endif %}
 {% endif -%}
 {% endfor -%}
-View {{ room.title }} at {{ notif.link }}
+View {{ room.title }} at {{ notif.link | replace("/#/room/", "/room/") }}

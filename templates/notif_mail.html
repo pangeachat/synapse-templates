@@ -5,6 +5,9 @@
 {% set summary = summary_text | replace("[" ~ app_name ~ "] ", "") %}
 {% set title = summary %}
 {% set unsubscribe_url = unsubscribe_link %}
+{# Synapse links to /#/room/<room>/<event>. The web app drops the # part at
+   startup, so every link here uses the path form the app reads; notif.txt and
+   room.txt do the same. #}
 {% set receiving_reason = "You're receiving this because you have unread messages on Pangea Chat." %}
 {% block content %}
             <tr>
@@ -17,7 +20,7 @@
                   {% if room.invite %}
                   <p style="margin:0 0 16px;">You've been invited to join.</p>
                   <div class="cta-block" style="text-align:center;padding:0 0 4px;">
-                    <a class="cta-button" href="{{ room.link }}" style="display:inline-block;background-color:#5e3acf;color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:18px;font-weight:600;font-size:16px;">Join the conversation</a>
+                    <a class="cta-button" href="{{ room.link | replace("/#/room/", "/room/") }}" style="display:inline-block;background-color:#5e3acf;color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:18px;font-weight:600;font-size:16px;">Join the conversation</a>
                   </div>
                   {% else %}
                   {% for notif in room.notifs %}
@@ -38,7 +41,7 @@
                   </div>
                   {% endfor %}
                   <div class="cta-block" style="text-align:center;padding:4px 0 4px;">
-                    <a class="cta-button" href="{{ notif.link }}" style="display:inline-block;background-color:#5e3acf;color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:18px;font-weight:600;font-size:16px;">Open in Pangea Chat</a>
+                    <a class="cta-button" href="{{ notif.link | replace("/#/room/", "/room/") }}" style="display:inline-block;background-color:#5e3acf;color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:18px;font-weight:600;font-size:16px;">Open in Pangea Chat</a>
                   </div>
                   {% endfor %}
                   {% endif %}

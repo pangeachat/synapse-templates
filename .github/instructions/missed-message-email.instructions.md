@@ -5,7 +5,7 @@ description: "The missed-message email Synapse sends — what it contains, its f
 
 # Missed-Message Email
 
-Synapse sends this email when someone still has unread messages about 10 minutes after they arrive. When it is sent and how often belong to Synapse; the `missed_message` category and its rules are in the org [user-communication-controls](../../../.github/.github/instructions/user-communication-controls.instructions.md) doc. These templates decide only what the email contains and how it looks.
+Synapse sends this email when someone still has unread messages about 10 minutes after they arrive. When it is sent and how often belong to Synapse; the `missed_message` category and its rules are in the engagement repo's [notices](https://github.com/pangeachat/engagement/blob/main/.github/instructions/notices.instructions.md) doc. These templates decide only what the email contains and how it looks.
 
 ## Content
 

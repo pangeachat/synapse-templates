@@ -1,0 +1,23 @@
+name: brand email layout
+
+# The brand email layout is the single source every Pangea email is generated from
+# (.github/instructions/brand-email-layout.instructions.md). This generates every sender's copy and
+# renders every email here on the layout, so a source change a sender cannot take fails in its own PR.
+
+on:
+  pull_request:
+    paths:
+      - "templates/**"
+      - "scripts/brand_email.py"
+      - ".github/workflows/brand_email.yaml"
+
+jobs:
+  brand-email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jinja2
+      - run: python scripts/brand_email.py selftest

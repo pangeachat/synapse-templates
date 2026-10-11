@@ -1,10 +1,9 @@
-{# Copied from synapse-pangea-chat notice_delivery/templates/brand_footer.html, which scripts/import_brand_email.py there generates from pangeachat/admin
-   email-marketing/templates/base.html. Keep this copy identical to that file
-   except for the include name and the terms link. #}
+{# The brand email layout's footer. Part of the single source every Pangea email is generated
+   from; see .github/instructions/brand-email-layout.instructions.md. #}
 {% set brand_postal_address = "1717 East Cary Street, Richmond, VA 23223" %}
                 <div
                   class="nsf-badge"
-                  style="display: block; width: 100%; box-sizing: border-box; background-color: #f9f7ff; border: 1px solid #e8e1f5; border-radius: 12px; padding: 12px 20px; margin-bottom: 16px; font-size: 13px; color: #555; text-align: left;"
+                  style="display: block; background-color: #f9f7ff; border: 1px solid #e8e1f5; border-radius: 12px; padding: 12px 20px; margin-bottom: 16px; font-size: 13px; color: #555; text-align: center;"
                 >
                   <img
                     src="https://assets.pangea.chat/brand/NSF.png"
@@ -21,6 +20,7 @@
                       display: inline-block;
                       vertical-align: middle;
                       max-width: 400px;
+                      text-align: left;
                     "
                     >Proudly supported by the U.S. National Science Foundation.</span
                   >

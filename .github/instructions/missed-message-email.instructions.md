@@ -1,6 +1,6 @@
 ---
-applyTo: "templates/notif_mail*,templates/notif.txt,templates/room.txt,templates/_brand_email_*"
-description: "The missed-message email Synapse sends — what it contains, its footer and unsubscribe link, and the shared brand layout it and the course invite use."
+applyTo: "templates/notif_mail*,templates/notif.txt,templates/room.txt"
+description: "The missed-message email Synapse sends — what it contains, and its footer and unsubscribe link."
 ---
 
 # Missed-Message Email
@@ -21,4 +21,4 @@ The brand footer, with the receiving reason "You're receiving this because you h
 
 ## Brand layout
 
-`_brand_email_base.html` and `_brand_email_footer.html` are copies of the module's notice-email layout, which is generated from the marketing template in pangeachat/admin, so every Pangea email looks the same. This email, the course invite, and the credential emails (email verification at sign-up and for an added address, and password reset) extend it; the credential emails set `show_unsubscribe` to false because they are never refusable. The layout is table-based so Gmail, Outlook and Apple Mail render it the same way. Keep the copies identical to the module's files, apart from the footer include name and the terms link: the source links to `/terms`, which returns 404, and the copies link to `/terms-of-service`.
+The email uses the [brand email layout](brand-email-layout.instructions.md), the one every Pangea email uses.

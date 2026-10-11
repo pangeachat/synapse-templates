@@ -1,9 +1,8 @@
-{# Copied from synapse-pangea-chat notice_delivery/templates/brand_base.html, which scripts/import_brand_email.py there generates from pangeachat/admin
-   email-marketing/templates/base.html. Keep this copy identical to that file
-   except for the include name and the terms link. #}
+{# The brand email layout: the single source every Pangea email is generated from.
+   See .github/instructions/brand-email-layout.instructions.md before changing it. #}
 {% set brand_postal_address = "1717 East Cary Street, Richmond, VA 23223" %}
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="{{ lang | default('en') }}" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,6 +63,8 @@
       }
 
       /* ===== WRAPPER ===== */
+      /* A long unbroken word (a URL in a message) would widen the email past a phone screen;
+         these break only a word that would otherwise overflow. */
       .email-wrapper {
         width: 100%;
         max-width: 600px;
@@ -71,6 +72,8 @@
         background-color: #ffffff;
         border-radius: 18px;
         overflow: hidden;
+        overflow-wrap: anywhere;
+        word-break: break-word;
       }
 
       /* ===== HEADER ===== */
@@ -118,10 +121,10 @@
         text-align: center;
         padding: 8px 0 24px;
       }
+      /* Full width comes from display: block alone, which fits the padding inside. A width of 100%
+         plus padding overflowed the column in Gmail on iOS. */
       .cta-button {
         display: block;
-        width: 100%;
-        box-sizing: border-box;
         text-align: center;
         background-color: #5e3acf;
         color: #ffffff !important;
@@ -157,8 +160,6 @@
       }
       .footer .nsf-badge {
         display: block;
-        width: 100%;
-        box-sizing: border-box;
         background-color: #f9f7ff;
         border: 1px solid #e8e1f5;
         border-radius: 12px;
@@ -166,7 +167,7 @@
         margin-bottom: 16px;
         font-size: 13px;
         color: #555;
-        text-align: left;
+        text-align: center;
       }
       .footer .nsf-badge img {
         display: inline-block;
@@ -177,6 +178,7 @@
         display: inline-block;
         vertical-align: middle;
         max-width: 400px;
+        text-align: left;
       }
 
       /* ===== GOLD ACCENT ===== */
@@ -275,7 +277,7 @@
             width="600"
             cellpadding="0"
             cellspacing="0"
-            style="width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e8e1f5; border-radius: 18px; overflow: hidden; border-collapse: separate;"
+            style="width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e8e1f5; border-radius: 18px; overflow: hidden; border-collapse: separate; overflow-wrap: anywhere; word-break: break-word;"
           >
             <!-- Gold accent bar -->
             <tr>
@@ -294,7 +296,7 @@
                     src="https://assets.pangea.chat/brand/Medium-Dark-Horizontal-Logo.png"
                     width="200"
                     alt="Pangea Chat"
-                    style="display: block"
+                    style="display: block; max-width: 100%; height: auto"
                   />
                 </a>
               </td>

@@ -19,7 +19,7 @@ Jinja2 HTML + TXT templates (`course_invite.html`, `course_invite.txt`) for the 
 - Optional personal message from inviter
 
 **Constraints**:
-- Extends the shared brand layout `_brand_email_base.html`, the same one the missed-message email uses; see [missed-message-email.instructions.md](missed-message-email.instructions.md#brand-layout). It shows no Unsubscribe link, because course invitations are not yet refusable.
+- Uses the [brand email layout](brand-email-layout.instructions.md), the one every Pangea email uses. It shows no Unsubscribe link, because course invitations are not yet refusable.
 - Deployed via ansible (same pattern as registration/password-reset templates)
 
 ## Future Work

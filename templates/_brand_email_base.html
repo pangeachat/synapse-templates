@@ -1,9 +1,8 @@
-{# Copied from synapse-pangea-chat notice_delivery/templates/brand_base.html, which scripts/import_brand_email.py there generates from pangeachat/admin
-   email-marketing/templates/base.html. Keep this copy identical to that file
-   except for the include name and the terms link. #}
+{# The brand email layout: the single source every Pangea email is generated from.
+   See .github/instructions/brand-email-layout.instructions.md before changing it. #}
 {% set brand_postal_address = "1717 East Cary Street, Richmond, VA 23223" %}
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="{{ lang | default('en') }}" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -21,19 +21,16 @@ This repo owns the layout because it is public, so every other repo's checks can
 
 ## The generated copies
 
-Two other systems send email and cannot read this repo when they send, so each keeps a copy generated from the source by [`scripts/brand_email.py`](../../scripts/brand_email.py). Each copy opens with a header saying it is generated; **NEVER hand-edit a generated copy**, because the next generation overwrites the edit and the drift check fails on it first.
+Three other systems send email and cannot read this repo when they send, so each keeps a copy generated from the source by [`scripts/brand_email.py`](../../scripts/brand_email.py). Each copy opens with a header saying it is generated; **NEVER hand-edit a generated copy**, because the next generation overwrites the edit and the drift check fails on it first.
 
 | Sender | Its copy | What differs from the source |
 |---|---|---|
 | The Synapse module (synapse-pangea-chat): notice delivery and the course claim emails | The three templates, in each of the module's two template folders | Nothing but the header |
 | The engagement runner | Its email shell and the button style its renderer applies to every call-to-action link | Rendered from the source with the runner's placeholders in the slots: the title, the language, the content, the receiving reason, and the unsubscribe link and postal address Synapse fills at send time |
+| The CMS: the course request and conference signup confirmations | Its email shell, which it fills with each confirmation's body before writing it to Listmonk | Rendered from the source with the CMS's placeholders in the title and content slots. The confirmations are replies to a form, never refusable, so the shell carries no unsubscribe link, and the postal address is printed as is |
 
 Only the slots differ, so a sender cannot change the look without changing the source.
 
 ## The drift check
 
-Each sender's checks compare its copy with what the generator produces from this repo's main branch, and fail when they differ: the module's CI checks this repo out, and the engagement test suite reads the checkout beside it. A change here therefore turns those checks red until each sender regenerates its copy, which is the point: the layout cannot fork silently. This repo's own CI generates every copy from a changed source, so a source edit that a sender's slots can no longer fill fails in the PR that made it.
-
-## What is not on the layout yet
-
-The CMS's two form confirmations (a course request, a conference signup) are Listmonk templates whose layout was pasted into Listmonk; moving them onto a generated copy is [cms#484](https://github.com/pangeachat/cms/issues/484).
+Each sender's checks compare its copy with what the generator produces from this repo's main branch, and fail when they differ: the module's and the CMS's CI check this repo out, and the engagement test suite reads the checkout beside it. A change here therefore turns those checks red until each sender regenerates its copy, which is the point: the layout cannot fork silently. This repo's own CI generates every copy from a changed source, so a source edit that a sender's slots can no longer fill fails in the PR that made it.

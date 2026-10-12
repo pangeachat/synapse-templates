@@ -2,6 +2,7 @@
 
     python scripts/brand_email.py write module PATH       # PATH: a synapse-pangea-chat checkout
     python scripts/brand_email.py check engagement PATH   # PATH: an engagement checkout
+    python scripts/brand_email.py check cms PATH          # PATH: a cms checkout
     python scripts/brand_email.py selftest                # generate every copy in memory
 
 ``--ref REF`` reads the source at a git ref of this repo instead of the working tree, so a check can
@@ -31,6 +32,13 @@ ENGAGEMENT_SLOTS = {
     "unsubscribe_url": "{{unsubscribe_url}}",
     "postal_address": "{{postal_address}}",
 }
+CMS_SHELL = "src/email/brand-email-shell.ts"
+# The CMS fills the title and content itself before writing the email to Listmonk. Listmonk reads
+# every double brace as its own template syntax, so the shell carries none: the confirmations are
+# never refusable (no unsubscribe link) and the postal address is printed from the source's default.
+# The shell is a TypeScript module because the CMS's production image holds only the compiled
+# server, so an .html file beside the code would not be there to read.
+CMS_SLOTS = {"lang": "en", "title": "[[TITLE]]", "show_unsubscribe": False}
 
 
 def read_sources(ref: str | None) -> dict[str, str]:
@@ -61,25 +69,36 @@ def module_copies(src: dict[str, str]) -> dict[str, str]:
     return out
 
 
-def engagement_copies(src: dict[str, str]) -> dict[str, str]:
-    """The runner fills its shell by string replacement, so the source is rendered with its placeholders in the slots."""
+SHELL = (
+    '{% extends "_brand_email_base.html" %}{% block content %}\n'
+    '            <tr>\n              <td class="body-content" style="padding: 36px 40px 24px;">\n[[CONTENT]]\n              </td>\n            </tr>\n'
+    "{% endblock %}"
+)
+
+
+def _env(src: dict[str, str], **extra: str):
     import jinja2
 
-    shell = (
-        '{% extends "_brand_email_base.html" %}{% block content %}\n'
-        '            <tr>\n              <td class="body-content" style="padding: 36px 40px 24px;">\n[[CONTENT]]\n              </td>\n            </tr>\n'
-        "{% endblock %}"
-    )
-    button = '{% from "_brand_cta_button.html" import cta_button %}{{ cta_button("[[URL]]", "[[LABEL]]", outlook=false) }}'
-    env = jinja2.Environment(loader=jinja2.DictLoader({**src, "shell": shell, "button": button}), autoescape=True, undefined=jinja2.StrictUndefined)
-    html = env.get_template("shell").render(**ENGAGEMENT_SLOTS).lstrip()
+    return jinja2.Environment(loader=jinja2.DictLoader({**src, "shell": SHELL, **extra}), autoescape=True, undefined=jinja2.StrictUndefined)
+
+
+def _render_shell(env, slots: dict[str, object], placeholders: tuple[str, ...]) -> str:
+    """The source rendered with a sender's values in the slots, each placeholder present exactly once."""
+    html = env.get_template("shell").render(**slots).lstrip()
     if not html.startswith("<!doctype html>"):
         raise SystemExit("the rendered shell does not start with the doctype")
-    for slot in (*ENGAGEMENT_SLOTS.values(), "[[CONTENT]]"):
+    for slot in (*placeholders, "[[CONTENT]]"):
         if html.count(slot) != 1:
             raise SystemExit(f"the rendered shell has {html.count(slot)} of the slot {slot}, expected exactly one")
     html = html.replace("<head>", "<head>\n    <!-- " + generated_note("_brand_email_base.html") + " -->", 1)
-    html = "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
+    return "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
+
+
+def engagement_copies(src: dict[str, str]) -> dict[str, str]:
+    """The runner fills its shell by string replacement, so the source is rendered with its placeholders in the slots."""
+    button = '{% from "_brand_cta_button.html" import cta_button %}{{ cta_button("[[URL]]", "[[LABEL]]", outlook=false) }}'
+    env = _env(src, button=button)
+    html = _render_shell(env, ENGAGEMENT_SLOTS, tuple(ENGAGEMENT_SLOTS.values()))
     rendered_button = env.get_template("button").render().strip()
     return {
         ENGAGEMENT_SHELL: html,
@@ -87,7 +106,17 @@ def engagement_copies(src: dict[str, str]) -> dict[str, str]:
     }
 
 
-CONSUMERS = {"module": module_copies, "engagement": engagement_copies}
+def cms_copies(src: dict[str, str]) -> dict[str, str]:
+    """The CMS fills its shell by string replacement and Listmonk then renders it, so the shell holds no double braces."""
+    html = _render_shell(_env(src), CMS_SLOTS, ("[[TITLE]]",))
+    if "{{" in html or "{%" in html:
+        raise SystemExit("the CMS shell would carry template syntax into Listmonk")
+    literal = html.replace("\\", "\\\\").replace("`", "\\`").replace("${", "\\${")
+    module = f"// {generated_note('_brand_email_base.html')}\nexport const BRAND_EMAIL_SHELL = `{literal}`;\n"
+    return {CMS_SHELL: module}
+
+
+CONSUMERS = {"module": module_copies, "engagement": engagement_copies, "cms": cms_copies}
 
 
 def render_own_emails() -> int:

@@ -32,10 +32,12 @@ ENGAGEMENT_SLOTS = {
     "unsubscribe_url": "{{unsubscribe_url}}",
     "postal_address": "{{postal_address}}",
 }
-CMS_SHELL = "src/email/brand_email.html"
+CMS_SHELL = "src/email/brand-email-shell.ts"
 # The CMS fills the title and content itself before writing the email to Listmonk. Listmonk reads
 # every double brace as its own template syntax, so the shell carries none: the confirmations are
 # never refusable (no unsubscribe link) and the postal address is printed from the source's default.
+# The shell is a TypeScript module because the CMS's production image holds only the compiled
+# server, so an .html file beside the code would not be there to read.
 CMS_SLOTS = {"lang": "en", "title": "[[TITLE]]", "show_unsubscribe": False}
 
 
@@ -109,7 +111,9 @@ def cms_copies(src: dict[str, str]) -> dict[str, str]:
     html = _render_shell(_env(src), CMS_SLOTS, ("[[TITLE]]",))
     if "{{" in html or "{%" in html:
         raise SystemExit("the CMS shell would carry template syntax into Listmonk")
-    return {CMS_SHELL: html}
+    literal = html.replace("\\", "\\\\").replace("`", "\\`").replace("${", "\\${")
+    module = f"// {generated_note('_brand_email_base.html')}\nexport const BRAND_EMAIL_SHELL = `{literal}`;\n"
+    return {CMS_SHELL: module}
 
 
 CONSUMERS = {"module": module_copies, "engagement": engagement_copies, "cms": cms_copies}

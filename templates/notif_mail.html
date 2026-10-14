@@ -9,6 +9,8 @@
 {# Synapse links to /#/room/<room>/<event>. The web app drops the # part at
    startup, so every link here uses the path form the app reads; notif.txt and
    room.txt do the same. #}
+{# format_ts uses the server's time zone, not the reader's, and the email can
+   cover messages from hours apart, so each time carries its date and zone. #}
 {% set receiving_reason = "You're receiving this because you have unread messages on Pangea Chat." %}
 {% block content %}
             <tr>
@@ -24,12 +26,14 @@
                   {% else %}
                   {% for notif in room.notifs %}
                   {% for message in notif.messages %}
-                  <p style="margin:0 0 4px;font-size:14px;"><strong>{% if message.msgtype == "m.emote" %}* {% endif %}{{ message.sender_name }}</strong> &middot; {{ message.ts|format_ts("%H:%M") }}</p>
+                  <p style="margin:0 0 4px;font-size:14px;"><strong>{% if message.msgtype == "m.emote" %}* {% endif %}{{ message.sender_name }}</strong> &middot; {{ message.ts|format_ts("%b %d, %H:%M %Z") }}</p>
                   <div class="feature-desc" style="margin:0 0 16px;color:#333;font-size:16px;line-height:1.5;">
                     {% if message.event_type == "m.room.encrypted" %}
                     An encrypted message.
                     {% elif message.msgtype in ("m.text", "m.emote", "m.notice") %}
                     {{ message.body_text_html }}
+                    {# Images and files are named, not shown: chat media needs a
+                       signed-in request, which an email client cannot make. #}
                     {% elif message.msgtype == "m.image" %}
                     Sent an image.
                     {% elif message.msgtype == "m.file" %}

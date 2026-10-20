@@ -2,7 +2,9 @@
 {% from "_brand_cta_button.html" import cta_button %}
 {# Synapse's missed-message email. Synapse supplies the rooms and messages and
    the signed unsubscribe link; the brand layout supplies everything else. #}
-{# Synapse reuses the subject line, "[Pangea Chat] …", as summary_text. #}
+{# Synapse reuses the subject line as summary_text. The missed-message
+   subjects (ansible inventory) have no "[Pangea Chat] " prefix; invite
+   subjects still do, so it is stripped here. #}
 {% set summary = summary_text | replace("[" ~ app_name ~ "] ", "") %}
 {% set title = summary %}
 {% set unsubscribe_url = unsubscribe_link %}

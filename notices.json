@@ -36,7 +36,7 @@
       "sample": {
         "app_name": "Pangea Chat",
         "user_display_name": "Sam",
-        "summary_text": "[Pangea Chat] You have 2 unread messages from Ana in Spanish 101",
+        "summary_text": "You have missed messages on Pangea Chat",
         "unsubscribe_link": "https://matrix.pangea.chat/_synapse/client/unsubscribe?example",
         "rooms": [
           {

@@ -27,7 +27,7 @@ Three other systems send email and cannot read this repo when they send, so each
 |---|---|---|
 | The Synapse module (synapse-pangea-chat): notice delivery and the course claim emails | The three templates, in each of the module's two template folders | Nothing but the header |
 | The engagement runner | Its email shell and the button style its renderer applies to every call-to-action link | Rendered from the source with the runner's placeholders in the slots: the title, the language, the content, the receiving reason, and the unsubscribe link and postal address Synapse fills at send time |
-| The CMS: the course request and conference signup confirmations | Its email shell, which it fills with each confirmation's body before writing it to Listmonk | Rendered from the source with the CMS's placeholders in the title and content slots. The confirmations are replies to a form, never refusable, so the shell carries no unsubscribe link, and the postal address is printed as is |
+| The CMS: the course request and conference signup confirmations, and the admin password-reset email, sent by Payload through SES | Its email shell, which it fills with each confirmation's body before writing it to Listmonk | Rendered from the source with the CMS's placeholders in the title and content slots. The confirmations are replies to a form, never refusable, so the shell carries no unsubscribe link, and the postal address is printed as is |
 
 Only the slots differ, so a sender cannot change the look without changing the source.
 

@@ -4,7 +4,7 @@ applyTo: "templates/course_invite*"
 
 # Course Invite Email Template
 
-Cross-repo design: [conference-course-invite.instructions.md](../../../.github/.github/instructions/teacher-funnel.instructions.md)
+Cross-repo design: the engagement repo's [teacher-funnel.instructions.md](https://github.com/pangeachat/engagement/blob/main/.github/instructions/teacher-funnel.instructions.md)
 Brand tokens: [design-tokens.instructions.md](../../../.github/.github/instructions/design-tokens.instructions.md)
 Brand assets (the logo this template loads from the CDN): [design-system.instructions.md](../../../business/.github/instructions/design-system.instructions.md)
 
@@ -19,9 +19,7 @@ Jinja2 HTML + TXT templates (`course_invite.html`, `course_invite.txt`) for the 
 - Optional personal message from inviter
 
 **Constraints**:
-- Standalone HTML (no `_base.html` inheritance) — matches the brand template used by campaign emails
-- Table-based layout for Gmail/Outlook/Apple Mail compatibility
-- Uses brand palette from the design system: purple gradient header (`#5E3ACF` → `#8560E0`), gold accents (`#FDBF01`), purple CTA button, NSF badge footer
+- Uses the [brand email layout](brand-email-layout.instructions.md), the one every Pangea email uses. It shows no Unsubscribe link, because course invitations are not yet refusable.
 - Deployed via ansible (same pattern as registration/password-reset templates)
 
 ## Future Work

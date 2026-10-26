@@ -1,12 +1,23 @@
-{% extends "_email_base.html" %}
-{% block title %}Registration{% endblock %}
-
-{% block body %}
-<p>You have asked us to register this email with a new Pangea Chat account. If this was you, please click the link below to confirm your email address:</p>
-
-<a href="{{ link }}">Verify Your Email Address</a>
-
-<p>If this was not you, you can safely disregard this email.</p>
-
-<p>Thank you.</p>
+{% extends "_brand_email_base.html" %}
+{% from "_brand_cta_button.html" import cta_button %}
+{# Email verification at sign-up, sent by Synapse with the confirmation link. Credential mail:
+   never refusable, so the footer carries no unsubscribe link. #}
+{% set title = "Verify your email address" %}
+{% set show_unsubscribe = false %}
+{% block content %}
+            <tr>
+              <td class="body-content" style="padding:36px 40px 24px;">
+                <p style="margin:0 0 16px;">
+                  You have asked us to register this email with a new Pangea Chat account. If this was you, confirm your email address:
+                </p>
+                {{ cta_button(link, "Verify Your Email Address") }}
+                <p style="margin:0 0 16px;font-size:14px;color:#666;">
+                  If the button does not work, copy this link into your browser:<br />
+                  <a href="{{ link }}" style="color:#5e3acf;word-break:break-all;">{{ link }}</a>
+                </p>
+                <p style="margin:0;font-size:14px;color:#666;">
+                  If this was not you, you can safely disregard this email. Thank you.
+                </p>
+              </td>
+            </tr>
 {% endblock %}

@@ -3,7 +3,7 @@
    plain-text part arrives as a run-on paragraph. Same content. #}
 {{ room.title }}
 {% if room.invite %}
-You've been invited, join at {{ room.link }}
+You've been invited, join at {{ room.link | replace("/#/room/", "/room/") }}
 {%- else %}
 {%- for notif in room.notifs %}
 {%- include 'notif.txt' with context %}

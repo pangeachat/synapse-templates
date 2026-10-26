@@ -1,8 +1,23 @@
-{% extends "_email_base.html" %}
-{% block title %}Request to add an email address to your Pangea Chat account{% endblock %}
-
-{% block body %}
-<p>A request to add an email address to your Pangea Chat account has been received. If this was you, please click the link below to confirm adding this email:</p>
-<a href="{{ link }}">{{ link }}</a>
-<p>If this was not you, you can safely ignore this email. Thank you.</p>
+{% extends "_brand_email_base.html" %}
+{% from "_brand_cta_button.html" import cta_button %}
+{# Verifying an email added to an existing account, sent by Synapse with the confirmation link.
+   Credential mail: never refusable, so the footer carries no unsubscribe link. #}
+{% set title = "Confirm your email address" %}
+{% set show_unsubscribe = false %}
+{% block content %}
+            <tr>
+              <td class="body-content" style="padding:36px 40px 24px;">
+                <p style="margin:0 0 16px;">
+                  A request to add an email address to your Pangea Chat account has been received. If this was you, confirm adding this email:
+                </p>
+                {{ cta_button(link, "Confirm This Email") }}
+                <p style="margin:0 0 16px;font-size:14px;color:#666;">
+                  If the button does not work, copy this link into your browser:<br />
+                  <a href="{{ link }}" style="color:#5e3acf;word-break:break-all;">{{ link }}</a>
+                </p>
+                <p style="margin:0;font-size:14px;color:#666;">
+                  If this was not you, you can safely ignore this email. Thank you.
+                </p>
+              </td>
+            </tr>
 {% endblock %}

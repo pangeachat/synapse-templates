@@ -1,0 +1,74 @@
+{
+  "about": "Which email each template sends, as the engagement notice catalog names it, and sample values to preview it with. This repo is the source of truth for these emails' copy; the engagement workspace reads this file and the templates at the deployed tag to preview them, and keeps no copy of its own. Sample values are illustrative only and never sent.",
+  "emails": [
+    {
+      "notice": "credential/email_verification",
+      "label": "Verify an email at sign-up",
+      "html": "templates/registration.html",
+      "text": "templates/registration.txt",
+      "sample": {
+        "link": "https://matrix.pangea.chat/_synapse/client/example-link"
+      }
+    },
+    {
+      "notice": "credential/email_verification",
+      "label": "Verify an email added later",
+      "html": "templates/add_threepid.html",
+      "text": "templates/add_threepid.txt",
+      "sample": {
+        "link": "https://matrix.pangea.chat/_synapse/client/example-link"
+      }
+    },
+    {
+      "notice": "credential/password_reset",
+      "label": "Password reset",
+      "html": "templates/password_reset.html",
+      "text": "templates/password_reset.txt",
+      "sample": {
+        "link": "https://matrix.pangea.chat/_synapse/client/example-link"
+      }
+    },
+    {
+      "notice": "missed_message/missed_message",
+      "label": "Missed messages",
+      "html": "templates/notif_mail.html",
+      "text": "templates/notif_mail.txt",
+      "sample": {
+        "app_name": "Pangea Chat",
+        "user_display_name": "Sam",
+        "summary_text": "You have missed messages on Pangea Chat",
+        "unsubscribe_link": "https://matrix.pangea.chat/_synapse/client/unsubscribe?example",
+        "rooms": [
+          {
+            "title": "Spanish 101",
+            "invite": false,
+            "link": "https://app.pangea.chat/#/room/!example:pangea.chat",
+            "notifs": [
+              {
+                "link": "https://app.pangea.chat/#/room/!example:pangea.chat/$event",
+                "messages": [
+                  {
+                    "event_type": "m.room.message",
+                    "msgtype": "m.text",
+                    "sender_name": "Ana",
+                    "ts": 1791734400000,
+                    "body_text_html": "¿Quieres practicar mañana?",
+                    "body_text_plain": "¿Quieres practicar mañana?"
+                  },
+                  {
+                    "event_type": "m.room.message",
+                    "msgtype": "m.text",
+                    "sender_name": "Ana",
+                    "ts": 1791734460000,
+                    "body_text_html": "Tengo una actividad nueva.",
+                    "body_text_plain": "Tengo una actividad nueva."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

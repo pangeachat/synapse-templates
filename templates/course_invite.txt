@@ -6,7 +6,9 @@
 
 {% endif %}Join your course:
 {{ join_url }}
-
+{% if canvas_connected %}
+or open Pangea from your Canvas course
+{% endif %}
 If you don't have a Pangea Chat account yet, you'll be guided through a quick sign-up first.
 
 — The Pangea Chat Team

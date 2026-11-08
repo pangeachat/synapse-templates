@@ -1,27 +1,8 @@
 ---
 applyTo: "templates/course_invite*"
+description: "The student invitation email: which notice it renders, what it says, and why it carries no unsubscribe link."
 ---
 
-# Course Invite Email Template
+# Course invite email
 
-Cross-repo design: the engagement repo's [teacher-funnel.instructions.md](https://github.com/pangeachat/engagement/blob/main/.github/instructions/teacher-funnel.instructions.md)
-Brand tokens: [design-tokens.instructions.md](../../../.github/.github/instructions/design-tokens.instructions.md)
-Brand assets (the logo this template loads from the CDN): [design-system.instructions.md](../../../business/.github/instructions/design-system.instructions.md)
-
-## Design
-
-Jinja2 HTML + TXT templates (`course_invite.html`, `course_invite.txt`) for the invite email sent by the Synapse `invite_by_email` endpoint.
-
-**Content** — all derived from room state, not passed by caller:
-- Course title, description, banner image
-- Inviter name(s) + avatar(s) — all human users at the highest power level in the room
-- "Join Your Course" CTA → deep link with access code
-- Optional personal message from inviter
-
-**Constraints**:
-- Uses the [brand email layout](brand-email-layout.instructions.md), the one every Pangea email uses. It shows no Unsubscribe link, because course invitations are not yet refusable.
-- Deployed via ansible (same pattern as registration/password-reset templates)
-
-## Future Work
-
-- Localized templates for non-English conferences — no issue yet
+This template renders the `course_invite/student_invite` notice of the engagement catalog: the email a student gets when a teacher invites them to a course, sent by the Synapse module for both the seat invitation and the per-address join link it sent before seats ([student invitations](../../../.github/.github/instructions/student-invitations.instructions.md), which owns what the invitation is and when it is sent). It names the course and its teacher, carries the course's description and the teacher's note when there is one, and has one button, Join Your Course, which opens the course's class link with the invitation. It uses the [brand email layout](brand-email-layout.instructions.md) and shows no unsubscribe link, because an invitation is not yet refusable: the student has no relationship with Pangea to end until they accept. `notices.json` lists it with the other emails this repo renders so the engagement workspace can preview it.

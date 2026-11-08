@@ -69,6 +69,21 @@
           }
         ]
       }
+    },
+    {
+      "notice": "course_invite/student_invite",
+      "label": "Student invited to a course",
+      "html": "templates/course_invite.html",
+      "text": "templates/course_invite.txt",
+      "sample": {
+        "course_title": "Spanish 101",
+        "course_description": "Conversation practice for first-year Spanish, two activities a week.",
+        "join_url": "https://app.pangea.chat/#/join/EXAMPLE",
+        "inviter_names": [
+          "Ana García"
+        ],
+        "message": "Looking forward to practicing with you all this semester."
+      }
     }
   ]
 }
